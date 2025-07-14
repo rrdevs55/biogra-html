@@ -442,7 +442,9 @@ ul {
 .section-heading-1 {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
     .sub-heading {
         font-family: var(--rr-ff-heading);
         color: var(--rr-color-heading-primary);
@@ -499,6 +501,9 @@ ul {
         }
         @include breakpoint(sm) {
             font-size: 28px;
+            br{
+                display: none;
+            }
         }
     }
     &.white-content{
