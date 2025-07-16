@@ -6,6 +6,12 @@
 
 .about-section-2 {
     border-bottom: 1px solid var(--rr-color-border-1);
+
+    .about-heading-wrap {
+        @include breakpoint(md) {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .about-content-wrap {
@@ -95,6 +101,10 @@
             .about-exp-item {
                 display: flex;
 
+                @media only screen and (max-width: 576px) {
+                    display: block;
+                }
+
                 &:not(:last-of-type) {
                     margin-bottom: 30px;
                 }
@@ -103,8 +113,9 @@
                     gap: 100px;
 
                     @include breakpoint(xxl) {
-                       gap: 60px;
+                        gap: 60px;
                     }
+
                     @include breakpoint(sm) {
                         gap: 7px;
                         justify-content: space-between;
@@ -180,6 +191,11 @@
                     @include breakpoint(xl) {
                         font-size: 16px;
                     }
+
+                    @media only screen and (max-width: 576px) {
+                        margin-top: 15px;
+                    }
+
 
                     span {
                         color: var(--rr-color-text-body);
@@ -549,7 +565,7 @@
                 background: rgba(15, 15, 15, 0.15);
                 position: absolute;
                 width: 1px;
-                height: 840px;
+                height: 816px;
                 top: -70px;
                 left: 0;
                 content: '';
@@ -1275,7 +1291,7 @@
             .section-heading {
                 .section-title {
                     @include breakpoint(md) {
-                        br{
+                        br {
                             display: none;
                         }
                     }

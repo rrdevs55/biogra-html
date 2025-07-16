@@ -518,6 +518,11 @@ ul {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+@media only screen and (max-width: 576px) {
+  .section-heading-1 .sub-heading:before {
+    top: 50%;
+  }
+}
 .section-heading-1 .sub-heading.active:before {
   right: 0;
   opacity: 1;
@@ -3175,6 +3180,10 @@ ul {
   margin-left: -86px;
 }
 
+.mb-minuas-30 {
+  margin-bottom: -30px;
+}
+
 /** Buttons CSS */
 .new-btn {
   background-color: var(--rr-color-common-white);
@@ -5088,6 +5097,11 @@ START: Blog CSS
   padding: 30px;
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 }
+@media only screen and (max-width: 576px) {
+  .h2-blog-thumb {
+    padding: 5px;
+  }
+}
 @media (max-width: 1199px) {
   .h2-blog-thumb img {
     width: 100%;
@@ -5099,6 +5113,12 @@ START: Blog CSS
   border: none;
   padding: 28px;
   padding-right: 0px;
+}
+@media only screen and (max-width: 576px) {
+  .h2-blog-thumb-2 {
+    padding: 5px;
+    padding-right: 5px;
+  }
 }
 
 .h3-blog-wrapper .title {
@@ -6858,12 +6878,16 @@ START: Testimonial CSS
   justify-content: center;
   position: absolute;
   top: 58%;
-  left: 223px;
+  left: 215px;
   transform: translateY(-50%);
   z-index: 5;
   transition: all 0.3s ease-in-out;
   border: 1px solid rgba(28, 28, 40, 0.1);
   border-radius: 40px;
+}
+.h2-testimonial-section .swiper-arrow .swiper-nav i {
+  color: #0F0F0F;
+  font-size: 18px;
 }
 @media (max-width: 1600px) {
   .h2-testimonial-section .swiper-arrow .swiper-nav {
@@ -6876,7 +6900,7 @@ START: Testimonial CSS
 }
 .h2-testimonial-section .swiper-arrow .swiper-nav.swiper-prev {
   left: auto;
-  right: 223px;
+  right: 215px;
 }
 @media (max-width: 1600px) {
   .h2-testimonial-section .swiper-arrow .swiper-nav.swiper-prev {
@@ -7119,6 +7143,14 @@ START: Testimonial CSS
 .h3-testimonial__wrapper .testi-thumb-wrap img {
   border-radius: 50%;
 }
+.h3-testimonial__wrapper-2 {
+  margin-left: -100px;
+}
+@media (max-width: 1399px) {
+  .h3-testimonial__wrapper-2 {
+    margin-left: 0;
+  }
+}
 .h3-testimonial__content .content {
   margin-top: 45px;
 }
@@ -7134,6 +7166,11 @@ START: Testimonial CSS
   line-height: 35px;
   color: #0F0F0F;
   margin-top: 25px;
+}
+@media (max-width: 1600px) {
+  .h3-testimonial__content .content h5 br {
+    display: none;
+  }
 }
 .h3-testimonial_item {
   display: flex;
@@ -7205,7 +7242,7 @@ START: Testimonial CSS
   margin: 0;
   position: relative;
   top: 44px;
-  left: 0;
+  left: 5px;
 }
 .h3-testimonial__wrapper .content-carousel .swiper-pagination .swiper-pagination-bullet {
   width: 7px;
@@ -7695,6 +7732,11 @@ START: Testimonial CSS
     padding: 25px 54px 50px 70px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .service-section .item-wrapper .active {
+    padding: 50px 20px 50px 20px;
+  }
+}
 .service-section .item-wrapper .active .content {
   transform: translateY(0);
 }
@@ -7755,6 +7797,8 @@ START: Testimonial CSS
   max-height: 630px;
   opacity: 1;
   transform: translateY(0);
+  width: 1070px;
+  margin-left: 25px;
 }
 @media only screen and (max-width: 992px) {
   .service-2__item:hover .content .thumb-2 {
@@ -7935,7 +7979,7 @@ START: Testimonial CSS
   align-items: normal;
 }
 .service-2__item-2:hover .serivce-data-2 {
-  margin-left: 260px;
+  margin-left: 230px;
   margin-top: 210px;
 }
 @media (max-width: 1600px) {
@@ -8976,6 +9020,11 @@ START: Testimonial CSS
 .about-section-2 {
   border-bottom: 1px solid var(--rr-color-border-1);
 }
+@media only screen and (max-width: 992px) {
+  .about-section-2 .about-heading-wrap {
+    margin-bottom: 20px;
+  }
+}
 
 .about-content-wrap {
   display: flex;
@@ -9068,6 +9117,11 @@ START: Testimonial CSS
 .about-content-wrap .about-mid-content .about-mid-item .about-exp-item {
   display: flex;
 }
+@media only screen and (max-width: 576px) {
+  .about-content-wrap .about-mid-content .about-mid-item .about-exp-item {
+    display: block;
+  }
+}
 .about-content-wrap .about-mid-content .about-mid-item .about-exp-item:not(:last-of-type) {
   margin-bottom: 30px;
 }
@@ -9159,6 +9213,11 @@ START: Testimonial CSS
 @media (max-width: 1399px) {
   .about-content-wrap .about-mid-content .about-mid-item .about-exp-item .item-title {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .about-content-wrap .about-mid-content .about-mid-item .about-exp-item .item-title {
+    margin-top: 15px;
   }
 }
 .about-content-wrap .about-mid-content .about-mid-item .about-exp-item .item-title span {
@@ -9499,7 +9558,7 @@ START: Testimonial CSS
   background: rgba(15, 15, 15, 0.15);
   position: absolute;
   width: 1px;
-  height: 840px;
+  height: 816px;
   top: -70px;
   left: 0;
   content: "";
@@ -10762,6 +10821,11 @@ START: Testimonial CSS
     opacity: 0.5;
   }
 }
+@media only screen and (max-width: 767px) {
+  .hero-wrap .hero-img-wrap .img-bg-shape {
+    display: none;
+  }
+}
 .hero-wrap .hero-img-wrap .hero-men {
   position: absolute;
   right: 10%;
@@ -10905,6 +10969,7 @@ START: Testimonial CSS
   .hero-content .hero-bottom-wrap {
     row-gap: 25px;
     padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (max-width: 574px) {
@@ -10984,6 +11049,11 @@ START: Testimonial CSS
 .hero-wrap-2 {
   padding-top: 260px;
 }
+@media only screen and (max-width: 992px) {
+  .hero-wrap-2 {
+    padding-top: 280px;
+  }
+}
 .hero-wrap-2 .hero-top-thumb {
   display: flex;
   align-items: center;
@@ -11012,6 +11082,7 @@ START: Testimonial CSS
 @media only screen and (max-width: 767px) {
   .hero-wrap-2 .hero-top-thumb p {
     font-size: 20px;
+    margin-bottom: 15px;
   }
 }
 .hero-wrap-2 .hero-top-thumb .hero-thumb {
@@ -11786,16 +11857,31 @@ START: Project CSS
   object-fit: cover;
   object-position: top;
 }
+@media only screen and (max-width: 767px) {
+  .project-item .project-thumb-2 img {
+    height: 280px;
+  }
+}
 .project-item .project-thumb-3 {
   height: 480px;
   overflow: hidden;
   width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .project-item .project-thumb-3 {
+    height: 280px;
+  }
 }
 .project-item .project-thumb-3 img {
   width: 100%;
   height: 480px;
   object-fit: cover;
   object-position: top;
+}
+@media only screen and (max-width: 767px) {
+  .project-item .project-thumb-3 img {
+    height: 280px;
+  }
 }
 .project-item .project-content {
   display: flex;
@@ -11888,6 +11974,16 @@ START: Project CSS
 .project-item.big-item .project-thumb-2 {
   height: 100%;
 }
+@media (max-width: 1600px) {
+  .project-item-1 {
+    margin-right: 60px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .project-item-1 {
+    margin-right: 0;
+  }
+}
 .project-item-3 {
   margin-right: 30px;
   margin-left: 162px;
@@ -11902,7 +11998,7 @@ START: Project CSS
 @media only screen and (max-width: 992px) {
   .project-item-3 {
     margin-left: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
   }
 }
 .project-item-4 {
@@ -13132,6 +13228,11 @@ START: Project CSS
 .exp-secction {
   border-top: 1px solid var(--rr-color-border-1);
 }
+@media only screen and (max-width: 992px) {
+  .exp-secction .exp-left-content {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 1399px) {
   .exp-secction .section-heading .section-title br {
     display: none;
@@ -13335,7 +13436,10 @@ START: Project CSS
 }
 @media only screen and (max-width: 550px) {
   .skill-item-wrap .skill-item-2 {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 .skill-item-wrap .skill-item-2:not(:last-of-type) {
@@ -13931,6 +14035,11 @@ START: Contact CSS
     display: none;
   }
 }
+@media only screen and (max-width: 992px) {
+  .contact-img-wrap .contact-img-1 {
+    max-width: 300px;
+  }
+}
 .contact-img-wrap .contact-img-1 img {
   width: 100%;
   height: 100%;
@@ -13943,6 +14052,11 @@ START: Contact CSS
   max-width: 450px;
   width: 100%;
   height: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .contact-img-wrap .contact-img-2 {
+    max-width: 420px;
+  }
 }
 @media only screen and (max-width: 577px) {
   .contact-img-wrap .contact-img-2 {
@@ -15849,6 +15963,11 @@ START: Footer CSS
   position: relative;
   z-index: -1;
 }
+@media only screen and (max-width: 767px) {
+  .h2-footer-section {
+    padding: 20px 0;
+  }
+}
 .h2-footer-section::before {
   position: absolute;
   content: "";
@@ -15894,8 +16013,8 @@ START: Footer CSS
 }
 @media only screen and (max-width: 767px) {
   .h2-footer-title h2 {
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 65px;
+    line-height: 75px;
   }
 }
 .h2-footer-item {
@@ -15914,15 +16033,22 @@ START: Footer CSS
 @media (max-width: 1199px) {
   .h2-footer-item p {
     font-size: 33px;
+    line-height: 50px;
   }
-  .h2-footer-item p br {
-    display: none;
+}
+@media only screen and (max-width: 992px) {
+  .h2-footer-item p {
+    font-size: 21px;
+    line-height: 35px;
   }
 }
 @media only screen and (max-width: 767px) {
   .h2-footer-item p {
     font-size: 33px;
     line-height: 40px;
+  }
+  .h2-footer-item p br {
+    display: none;
   }
 }
 .h2-footer-content {
@@ -15948,7 +16074,7 @@ START: Footer CSS
 .h2-footer-content .social-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 38px;
   padding: 0;
   margin-bottom: 40px;
   margin-bottom: 42px;

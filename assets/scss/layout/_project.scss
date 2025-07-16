@@ -67,6 +67,10 @@ START: Project CSS
                 height: 700px;
                 object-fit: cover;
                 object-position: top;
+
+                @include breakpoint(sm) {
+                    height: 280px;
+                }
             }
         }
 
@@ -77,14 +81,19 @@ START: Project CSS
             overflow: hidden;
             width: 100%;
 
+            @include breakpoint(sm) {
+                height: 280px;
+            }
+
             img {
                 width: 100%;
                 height: 480px;
                 object-fit: cover;
                 object-position: top;
-            }
 
-            @include breakpoint(md) {
+                @include breakpoint(sm) {
+                    height: 280px;
+                }
             }
         }
 
@@ -192,6 +201,16 @@ START: Project CSS
         }
     }
 
+    &-1 {
+        @include breakpoint(xxl) {
+            margin-right: 60px;
+        }
+
+        @include breakpoint(md) {
+            margin-right: 0;
+        }
+    }
+
     &-3 {
         margin-right: 30px;
         margin-left: 162px;
@@ -204,7 +223,7 @@ START: Project CSS
 
         @include breakpoint(md) {
             margin-left: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 40px;
         }
 
     }

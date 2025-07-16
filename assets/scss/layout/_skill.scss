@@ -148,7 +148,10 @@
         grid-template-columns: 116px 1fr;
 
         @media only screen and (max-width: 550px) {
-            display: block;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
         }
 
         &:not(:last-of-type) {

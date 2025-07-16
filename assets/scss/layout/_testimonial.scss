@@ -569,12 +569,17 @@ START: Testimonial CSS
             justify-content: center;
             position: absolute;
             top: 58%;
-            left: 223px;
+            left: 215px;
             transform: translateY(-50%);
             z-index: 5;
             transition: all 0.3s ease-in-out;
             border: 1px solid rgba(28, 28, 40, 0.1);
             border-radius: 40px;
+
+            i {
+                color: #0F0F0F;
+                font-size: 18px;
+            }
 
             @include breakpoint(xxl) {
                 left: 0px;
@@ -587,7 +592,7 @@ START: Testimonial CSS
 
             &.swiper-prev {
                 left: auto;
-                right: 223px;
+                right: 215px;
 
                 @include breakpoint(xxl) {
                     right: 0px;
@@ -869,6 +874,14 @@ START: Testimonial CSS
                 border-radius: 50%;
             }
         }
+
+        &-2 {
+            margin-left: -100px;
+
+            @include breakpoint(xl) {
+                margin-left: 0;
+            }
+        }
     }
 
     &__content {
@@ -888,6 +901,12 @@ START: Testimonial CSS
                 line-height: 35px;
                 color: #0F0F0F;
                 margin-top: 25px;
+
+                @include breakpoint(xxl) {
+                    br{
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -977,7 +996,7 @@ START: Testimonial CSS
             margin: 0;
             position: relative;
             top: 44px;
-            left: 0;
+            left: 5px;
 
             .swiper-pagination-bullet {
                 width: 7px;

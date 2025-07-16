@@ -122,7 +122,7 @@ START: Footer CSS
                     a {
                         color: var(--rr-color-common-white);
                         line-height: 1;
-                        position: relative; 
+                        position: relative;
                         font-size: 18px;
 
                         &:before {
@@ -186,6 +186,10 @@ START: Footer CSS
         position: relative;
         z-index: -1;
 
+        @include breakpoint(sm) {
+            padding: 20px 0;
+        }
+
         &::before {
             position: absolute;
             content: '';
@@ -229,8 +233,8 @@ START: Footer CSS
             }
 
             @include breakpoint(sm) {
-                font-size: 80px;
-                line-height: 90px;
+                font-size: 65px;
+                line-height: 75px;
             }
         }
     }
@@ -250,15 +254,21 @@ START: Footer CSS
 
             @include breakpoint(lg) {
                 font-size: 33px;
+                line-height: 50px;
+            }
 
-                & br {
-                    display: none;
-                }
+            @include breakpoint(md) {
+                font-size: 21px;
+                line-height: 35px;
             }
 
             @include breakpoint(sm) {
                 font-size: 33px;
                 line-height: 40px;
+
+                br {
+                    display: none;
+                }
             }
         }
     }
@@ -286,7 +296,7 @@ START: Footer CSS
         .social-links {
             list-style: none;
             display: flex;
-            gap: 1rem;
+            gap: 38px;
             padding: 0;
             margin-bottom: 40px;
             margin-bottom: 42px;
@@ -387,6 +397,7 @@ START: Footer CSS
     border-top: 1px solid rgba(15, 15, 15, 0.1);
     padding-top: 30px;
     padding-bottom: 30px;
+
     .h3-footer-wrapper {
         display: flex;
         align-items: center;
@@ -450,6 +461,7 @@ START: Footer CSS
     &__text {
         padding-top: 10px;
         text-align: center;
+
         .title {
             font-weight: 600;
             font-size: 230px;
@@ -457,24 +469,30 @@ START: Footer CSS
             letter-spacing: -0.01em;
             color: #FFFFFF;
             text-transform: uppercase;
+
             @include breakpoint(xxl) {
                 font-size: 190px;
             }
+
             @include breakpoint(xl) {
                 font-size: 150px;
             }
+
             @include breakpoint(lg) {
                 font-size: 120px;
                 line-height: 200px;
             }
+
             @include breakpoint(md) {
                 font-size: 90px;
                 line-height: 150px;
             }
+
             @include breakpoint(sm) {
                 font-size: 62px;
                 line-height: 48px;
             }
+
             @include breakpoint(xs) {
                 font-size: 45px;
                 line-height: 48px;
@@ -734,7 +752,7 @@ START: Footer CSS
             }
         }
     }
-}  
+}
 
 
 /* !END: Theme Footer CSS */

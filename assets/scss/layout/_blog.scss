@@ -308,6 +308,11 @@ START: Blog CSS
         padding: 30px;
         border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 
+        @media only screen and (max-width: 576px) {
+            padding: 5px;
+        }
+
+
         & img {
             @include breakpoint(lg) {
                 width: 100%;
@@ -320,6 +325,11 @@ START: Blog CSS
             border: none;
             padding: 28px;
             padding-right: 0px;
+
+            @media only screen and (max-width: 576px) {
+                padding: 5px;
+                padding-right: 5px;
+            }
         }
     }
 }
