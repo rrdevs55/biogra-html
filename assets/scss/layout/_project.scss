@@ -17,7 +17,7 @@ START: Project CSS
 
 .project-item {
     position: relative;
-    margin-right: -7px;
+    // margin-right: -7px;
 
     @include breakpoint(xxl) {
         margin-left: 0;
@@ -28,7 +28,7 @@ START: Project CSS
     }
 
     @include breakpoint(sm) {
-        margin-bottom: 0;
+        margin-bottom: 30px;
     }
 
     &-6 {
@@ -38,21 +38,21 @@ START: Project CSS
 
     .project-thumb {
         overflow: hidden;
-        max-width: 885px;
+        max-width: 865px;
         width: 100%;
 
         img {
             width: 100%;
-            height: 570px;
+            // height: 570px;
             object-fit: cover;
             object-position: top;
 
             @include breakpoint(md) {
-                height: 80%;
+                // height: 80%;
             }
 
             @include breakpoint(sm) {
-                height: 57%;
+                // height: 57%;
             }
         }
 

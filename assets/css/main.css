@@ -507,7 +507,7 @@ ul {
   width: 5px;
   height: 5px;
   position: absolute;
-  top: 50%;
+  top: 9%;
   left: 0px;
   transform: translateY(-50%);
   opacity: 0;
@@ -3305,7 +3305,7 @@ ul {
   transform: rotate(0deg);
 }
 .rr-primary-btn:focus {
-  color: var(--rr-color-common-white);
+  color: var(--rr-color-heading-primary);
 }
 .rr-primary-btn.transparent {
   background-color: transparent;
@@ -4851,14 +4851,14 @@ START: Blog CSS
 }
 @media only screen and (max-width: 992px) {
   .post-card .post-thumb-wrap .post-thumb {
-    max-width: 320px;
-    width: 100%;
+    width: 400px;
   }
 }
 @media only screen and (max-width: 767px) {
   .post-card .post-thumb-wrap .post-thumb {
     max-width: 100%;
-    height: 430px;
+    width: 100%;
+    height: 275px;
   }
   .post-card .post-thumb-wrap .post-thumb img {
     object-fit: cover;
@@ -9020,7 +9020,7 @@ START: Testimonial CSS
   padding-left: 100px;
   border-right: 1px solid var(--rr-color-border-1);
   border-left: 1px solid var(--rr-color-border-1);
-  padding-bottom: 195px;
+  padding-bottom: 208px;
 }
 @media (max-width: 1600px) {
   .about-content-wrap > div:nth-child(2) {
@@ -9249,7 +9249,7 @@ START: Testimonial CSS
   align-items: center;
   list-style: none;
   border-bottom: 1px solid rgba(15, 15, 15, 0.1);
-  padding: 15px 0 10px 0;
+  padding: 13px 0 10px 0;
 }
 @media (max-width: 1600px) {
   .about-content-wrap .about-ed-social li {
@@ -9313,6 +9313,7 @@ START: Testimonial CSS
 @media only screen and (max-width: 992px) {
   .about-content-wrap .about-right-content .about-author-info {
     padding-bottom: 50px;
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -9364,11 +9365,11 @@ START: Testimonial CSS
   border-bottom: 1px solid var(--rr-color-border-1);
 }
 .about-content-wrap .about-right-content .about-ed-list li:first-child {
-  padding-top: 15px;
+  padding-top: 19px;
   border-top: 1px solid var(--rr-color-border-1);
 }
 .about-content-wrap .about-right-content .about-ed-list li:not(:last-of-type) {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 .about-content-wrap .about-right-content .about-ed-list li .category {
   color: var(--rr-color-heading-primary);
@@ -9377,7 +9378,7 @@ START: Testimonial CSS
 }
 @media (max-width: 1399px) {
   .about-content-wrap .about-right-content .about-ed-list li .category {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 @media (max-width: 1199px) {
@@ -10714,7 +10715,7 @@ START: Testimonial CSS
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-51%);
+  transform: translateX(-50%);
   height: 100%;
   width: 100%;
 }
@@ -10725,7 +10726,7 @@ START: Testimonial CSS
 
 .hero-wrap {
   position: relative;
-  padding-top: 170px;
+  padding-top: 183px;
 }
 @media only screen and (max-width: 992px) {
   .hero-wrap {
@@ -10777,6 +10778,12 @@ START: Testimonial CSS
   max-width: 1570px;
   width: 100%;
   margin: 0 auto;
+  padding-left: 30px;
+}
+@media (max-width: 1600px) {
+  .hero-content {
+    padding-left: 0;
+  }
 }
 .hero-content .hero-list {
   display: flex;
@@ -11737,7 +11744,6 @@ START: Project CSS
 
 .project-item {
   position: relative;
-  margin-right: -7px;
 }
 @media (max-width: 1600px) {
   .project-item {
@@ -11751,7 +11757,7 @@ START: Project CSS
 }
 @media only screen and (max-width: 767px) {
   .project-item {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 .project-item-6 {
@@ -11760,24 +11766,13 @@ START: Project CSS
 }
 .project-item .project-thumb {
   overflow: hidden;
-  max-width: 885px;
+  max-width: 865px;
   width: 100%;
 }
 .project-item .project-thumb img {
   width: 100%;
-  height: 570px;
   object-fit: cover;
   object-position: top;
-}
-@media only screen and (max-width: 992px) {
-  .project-item .project-thumb img {
-    height: 80%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .project-item .project-thumb img {
-    height: 57%;
-  }
 }
 .project-item .project-thumb-2 {
   height: 90%;
@@ -12619,7 +12614,12 @@ START: Project CSS
 }
 @media only screen and (max-width: 767px) {
   .award-accordion .accordion-item .accordion-header .accordion-button {
-    display: block;
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .award-accordion .accordion-item .accordion-header .accordion-button {
+    gap: 6px;
   }
 }
 .award-accordion .accordion-item .accordion-header .accordion-button:after {
@@ -13256,7 +13256,7 @@ START: Project CSS
 }
 
 .skill-content {
-  padding-left: 106px;
+  padding-left: 116px;
 }
 @media (max-width: 1399px) {
   .skill-content {

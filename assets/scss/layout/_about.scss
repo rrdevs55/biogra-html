@@ -46,7 +46,7 @@
             padding-left: 100px;
             border-right: 1px solid var(--rr-color-border-1);
             border-left: 1px solid var(--rr-color-border-1);
-            padding-bottom: 195px;
+            padding-bottom: 208px;
 
             @include breakpoint(xxl) {
                 padding-left: 38px;
@@ -279,7 +279,7 @@
             align-items: center;
             list-style: none;
             border-bottom: 1px solid rgba(15, 15, 15, 0.1);
-            padding: 15px 0 10px 0;
+            padding: 13px 0 10px 0;
 
             @include breakpoint(xxl) {
                 display: block;
@@ -344,6 +344,7 @@
 
             @include breakpoint(md) {
                 padding-bottom: 50px;
+                margin-left: 0;
             }
 
             @include breakpoint(sm) {
@@ -388,82 +389,6 @@
         }
 
         .about-ed-list {
-            // .end-list-1 {
-            //     gap: 172px;
-
-            //     @include breakpoint(xxl) {
-            //         gap: 40px;
-            //     }
-
-            //     @include breakpoint(xl) {
-            //         gap: 28px;
-            //     }
-
-            //     @include breakpoint(lg) {
-            //         gap: 100px;
-            //     }
-
-            //     @include breakpoint(sm) {
-            //         gap: 50px;
-            //         justify-content: space-between;
-            //     }
-            // }
-
-            // .end-list-2 {
-            //     gap: 126px;
-
-            //     @include breakpoint(xxl) {
-            //         gap: 15px;
-            //     }
-
-            //     @include breakpoint(xl) {
-            //         gap: 15px;
-            //     }
-
-            //     @include breakpoint(lg) {
-            //         gap: 100px;
-            //     }
-
-            //     @include breakpoint(sm) {
-            //         justify-content: space-between;
-            //         gap: 20px;
-            //     }
-            // }
-
-            // .end-list-3 {
-            //     gap: 233px;
-
-            //     @include breakpoint(xxl) {
-            //         gap: 100px;
-            //     }
-
-            //     @include breakpoint(lg) {
-            //         gap: 130px;
-            //     }
-
-            //     @include breakpoint(sm) {
-            //         gap: 100px;
-            //         justify-content: space-between;
-            //     }
-            // }
-
-            // .end-list-4 {
-            //     gap: 241px;
-
-            //     @include breakpoint(xxl) {
-            //         gap: 100px;
-            //     }
-
-            //     @include breakpoint(xl) {
-            //         gap: 87px;
-            //     }
-
-            //     @include breakpoint(lg) {
-            //         gap: 100px;
-            //         justify-content: space-between;
-            //     }
-            // }
-
             li {
                 display: flex;
                 line-height: 1;
@@ -474,12 +399,12 @@
                 border-bottom: 1px solid var(--rr-color-border-1);
 
                 &:first-child {
-                    padding-top: 15px;
+                    padding-top: 19px;
                     border-top: 1px solid var(--rr-color-border-1);
                 }
 
                 &:not(:last-of-type) {
-                    margin-bottom: 15px;
+                    margin-bottom: 19px;
                 }
 
                 .category {
@@ -488,7 +413,7 @@
                     font-weight: 500;
 
                     @include breakpoint(xl) {
-                        font-size: 13px;
+                        font-size: 15px;
                     }
 
                     @include breakpoint(lg) {

@@ -28,7 +28,11 @@
                 border-radius: 0;
 
                 @include breakpoint(sm) {
-                    display: block;
+                    gap: 30px;
+                }
+
+                @media only screen and (max-width: 450px) {
+                     gap: 6px;
                 }
 
                 &:after {
@@ -307,7 +311,8 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid rgba(15, 15, 15, 0.1);
-        &-2{
+
+        &-2 {
             gap: 190px;
             border: none;
         }
@@ -362,6 +367,7 @@
             .award-image {
                 margin-left: 69px;
                 margin-top: -50px;
+
                 @include breakpoint(xxl) {
                     margin-left: 0;
                 }
@@ -554,8 +560,9 @@
                     }
                 }
             }
-            &-3{
-                &::before{
+
+            &-3 {
+                &::before {
                     display: none;
                 }
             }
