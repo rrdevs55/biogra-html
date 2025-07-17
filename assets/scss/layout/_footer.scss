@@ -490,12 +490,7 @@ START: Footer CSS
 
             @include breakpoint(sm) {
                 font-size: 62px;
-                line-height: 48px;
-            }
-
-            @include breakpoint(xs) {
-                font-size: 45px;
-                line-height: 48px;
+                line-height: 80px;
             }
 
         }
@@ -592,7 +587,7 @@ START: Footer CSS
                         ul {
                             display: flex;
                             align-items: center;
-                            gap: 33px;
+                            gap: 23px;
 
                             @include breakpoint(sm) {
                                 flex-wrap: wrap;
@@ -631,7 +626,7 @@ START: Footer CSS
                         ul {
                             display: flex;
                             align-items: center;
-                            gap: 20px;
+                            gap: 37px;
 
                             @include breakpoint(sm) {
                                 gap: 20px;

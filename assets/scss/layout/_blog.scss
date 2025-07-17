@@ -636,11 +636,14 @@ START: Blog CSS
         }
 
         @include breakpoint(md) {
-            gap: 100px;
+            gap: 25px;
+            margin-bottom: 40px;
         }
 
-        @include breakpoint(sm) {
-            gap: 10px;
+        .section-heading {
+            @include breakpoint(md) {
+                margin-bottom: 0;
+            }
         }
     }
 }
@@ -1585,8 +1588,7 @@ START: Blog CSS
         }
 
         @include breakpoint(md) {
-            flex-wrap: wrap;
-            gap: 25px;
+            display: block;
         }
 
         &:last-child {
@@ -1652,6 +1654,10 @@ START: Blog CSS
                 flex-wrap: wrap;
             }
 
+            @include breakpoint(md) {
+                margin-top: 30px;
+            }
+
             .content {
 
                 @include breakpoint(lg) {
@@ -1688,8 +1694,8 @@ START: Blog CSS
                             background-size: 100% 2px;
                         }
 
-                        br {
-                            @include breakpoint(lg) {
+                        @include breakpoint(lg) {
+                            br {
                                 display: none;
                             }
                         }

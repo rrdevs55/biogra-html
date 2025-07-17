@@ -1289,6 +1289,8 @@
 
         .h3-about__wrraper {
             .section-heading {
+                column-gap: 35px;
+
                 .section-title {
                     @include breakpoint(md) {
                         br {
@@ -1306,6 +1308,10 @@
 
         @include breakpoint(lg) {
             margin-top: 60px;
+        }
+
+        @media only screen and (max-width: 450px) {
+            margin-top: 0;
         }
 
         & img {

@@ -460,6 +460,10 @@
         padding-top: 120px;
     }
 
+    @include breakpoint(sm) {
+        padding-top: 50px;
+    }
+
     .title-wrap {
         display: flex;
         align-items: end;
@@ -588,6 +592,10 @@
     padding-top: 91px;
     padding-bottom: 100px;
     border-bottom: 1px solid rgba(28, 28, 40, 0.1);
+
+    @include breakpoint(xxl) {
+        padding: 0px 15px;
+    }
 
     .hero-5-wrapper {
         display: flex;
@@ -729,6 +737,11 @@
                     line-height: 70px
                 }
 
+                @media only screen and (max-width: 450px) {
+                    font-size: 28px;
+                    line-height: 40px
+                }
+
                 br {
                     @include breakpoint(md) {
                         display: none;
@@ -819,6 +832,7 @@
         @include breakpoint(md) {
             margin-left: 0;
             display: block;
+            margin-top: 60px;
         }
 
         .author-media {
@@ -906,6 +920,14 @@
 
         @include breakpoint(lg) {
             flex-wrap: wrap;
+        }
+
+        @include breakpoint(md) {
+            padding: 50px 66px 70px 58px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            padding: 50px 20px 70px 20px;
         }
 
         br {

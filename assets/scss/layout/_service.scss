@@ -100,7 +100,7 @@
             }
 
             @media only screen and (max-width: 576px) {
-                 padding: 50px 20px 50px 20px;
+                padding: 50px 20px 50px 20px;
             }
 
             .content {
@@ -143,7 +143,11 @@
 }
 
 /* !END: Page Header CSS */
-
+.service-5{
+    .section-heading {
+        margin-bottom: 70px !important;
+    }
+}
 .service-2 {
     .section-heading {
         margin-bottom: 0;
@@ -178,6 +182,10 @@
                     transform: translateY(0);
                     width: 1070px;
                     margin-left: 25px;
+
+                    @include breakpoint(xxxl) {
+                        width: inherit;
+                    }
 
                     @include breakpoint(md) {
                         max-height: 400px;
@@ -350,7 +358,7 @@
             flex-wrap: nowrap;
 
             @include breakpoint(md) {
-                padding: 40px;
+                padding: 20px;
             }
 
             @include breakpoint(sm) {
@@ -627,6 +635,10 @@
 .section-heading-2 {
     padding-left: 70px;
 
+    @include breakpoint(md) {
+        padding-left: 40px;
+    }
+
     @include breakpoint(sm) {
         padding-left: 0;
     }
@@ -788,6 +800,10 @@
         & img {
             margin-left: 80px;
 
+            @include breakpoint(md) {
+                margin-left: 40px;
+            }
+
             @include breakpoint(sm) {
                 margin-left: 38px;
                 width: 220px;
@@ -798,6 +814,10 @@
     &__wrap {
         margin-left: 67px;
         margin-top: 14px;
+
+        @include breakpoint(md) {
+             margin-left: 30px;
+        }
 
         @include breakpoint(sm) {
             margin-left: 37px;

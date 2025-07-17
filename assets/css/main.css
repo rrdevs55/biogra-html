@@ -809,7 +809,7 @@ ul {
 }
 
 .section-heading {
-  margin-bottom: 100px;
+  margin-bottom: 65px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -3371,6 +3371,10 @@ ul {
   border: 1px solid rgba(23, 23, 23, 0.1);
   background: transparent;
 }
+.rr-primary-btn-border-2 {
+  border: 1px solid #171717;
+  background: transparent;
+}
 .rr-primary-btn-bg {
   background: #0F0F0F;
   color: white;
@@ -5388,12 +5392,13 @@ START: Blog CSS
 }
 @media only screen and (max-width: 992px) {
   .h5-blog-info {
-    gap: 100px;
+    gap: 25px;
+    margin-bottom: 40px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .h5-blog-info {
-    gap: 10px;
+@media only screen and (max-width: 992px) {
+  .h5-blog-info .section-heading {
+    margin-bottom: 0;
   }
 }
 
@@ -6227,8 +6232,7 @@ START: Blog CSS
 }
 @media only screen and (max-width: 992px) {
   .blog-section-4-item {
-    flex-wrap: wrap;
-    gap: 25px;
+    display: block;
   }
 }
 .blog-section-4-item:last-child {
@@ -6284,6 +6288,11 @@ START: Blog CSS
 @media only screen and (max-width: 767px) {
   .blog-section-4-item .blog-wrap {
     flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .blog-section-4-item .blog-wrap {
+    margin-top: 30px;
   }
 }
 @media (max-width: 1199px) {
@@ -7199,6 +7208,11 @@ START: Testimonial CSS
   width: 350px;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 450px) {
+  .h3-testimonial__wrapper .testi-thumb-wrap {
+    width: 260px;
+  }
+}
 .h3-testimonial__wrapper .thumb-carousel {
   width: 70px;
   margin: 0 auto;
@@ -7769,6 +7783,10 @@ START: Testimonial CSS
 }
 
 /* !END: Page Header CSS */
+.service-5 .section-heading {
+  margin-bottom: 70px !important;
+}
+
 .service-2 .section-heading {
   margin-bottom: 0;
 }
@@ -7799,6 +7817,11 @@ START: Testimonial CSS
   transform: translateY(0);
   width: 1070px;
   margin-left: 25px;
+}
+@media (max-width: 1700px) {
+  .service-2__item:hover .content .thumb-2 {
+    width: inherit;
+  }
 }
 @media only screen and (max-width: 992px) {
   .service-2__item:hover .content .thumb-2 {
@@ -7959,7 +7982,7 @@ START: Testimonial CSS
 }
 @media only screen and (max-width: 992px) {
   .service-2__item-2 {
-    padding: 40px;
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -8212,6 +8235,11 @@ START: Testimonial CSS
 .section-heading-2 {
   padding-left: 70px;
 }
+@media only screen and (max-width: 992px) {
+  .section-heading-2 {
+    padding-left: 40px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .section-heading-2 {
     padding-left: 0;
@@ -8361,6 +8389,11 @@ START: Testimonial CSS
 .h3-service__content img {
   margin-left: 80px;
 }
+@media only screen and (max-width: 992px) {
+  .h3-service__content img {
+    margin-left: 40px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .h3-service__content img {
     margin-left: 38px;
@@ -8370,6 +8403,11 @@ START: Testimonial CSS
 .h3-service__wrap {
   margin-left: 67px;
   margin-top: 14px;
+}
+@media only screen and (max-width: 992px) {
+  .h3-service__wrap {
+    margin-left: 30px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .h3-service__wrap {
@@ -10239,6 +10277,9 @@ START: Testimonial CSS
 .h3-about__section {
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 }
+.h3-about__section .h3-about__wrraper .section-heading {
+  column-gap: 35px;
+}
 @media only screen and (max-width: 992px) {
   .h3-about__section .h3-about__wrraper .section-heading .section-title br {
     display: none;
@@ -10251,6 +10292,11 @@ START: Testimonial CSS
 @media (max-width: 1199px) {
   .h3-about__thumb {
     margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .h3-about__thumb {
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -11211,6 +11257,11 @@ START: Testimonial CSS
     padding-top: 120px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .hero-section-3 {
+    padding-top: 50px;
+  }
+}
 .hero-section-3 .title-wrap {
   display: flex;
   align-items: end;
@@ -11343,6 +11394,11 @@ START: Testimonial CSS
   padding-top: 91px;
   padding-bottom: 100px;
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
+}
+@media (max-width: 1600px) {
+  .hero-section-5 {
+    padding: 0px 15px;
+  }
 }
 .hero-section-5 .hero-5-wrapper {
   display: flex;
@@ -11481,6 +11537,12 @@ START: Testimonial CSS
     line-height: 70px;
   }
 }
+@media only screen and (max-width: 450px) {
+  .hero-section-5 .hero-5-wrapper .content .title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .hero-section-5 .hero-5-wrapper .content .title br {
     display: none;
@@ -11570,6 +11632,7 @@ START: Testimonial CSS
   .hero-section-5 .hero-5-author {
     margin-left: 0;
     display: block;
+    margin-top: 60px;
   }
 }
 .hero-section-5 .hero-5-author .autohor-service {
@@ -11644,6 +11707,16 @@ START: Testimonial CSS
 @media (max-width: 1199px) {
   .hero-section-4-wrapper {
     flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero-section-4-wrapper {
+    padding: 50px 66px 70px 58px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero-section-4-wrapper {
+    padding: 50px 20px 70px 20px;
   }
 }
 @media (max-width: 1399px) {
@@ -11846,20 +11919,20 @@ START: Project CSS
   object-position: top;
 }
 .project-item .project-thumb-2 {
-  height: 90%;
+  height: 100%;
   max-width: 100%;
   object-fit: cover;
   overflow: visible;
 }
 .project-item .project-thumb-2 img {
   width: 100%;
-  height: 700px;
+  height: 850px;
   object-fit: cover;
   object-position: top;
 }
 @media only screen and (max-width: 767px) {
   .project-item .project-thumb-2 img {
-    height: 280px;
+    height: 350px;
   }
 }
 .project-item .project-thumb-3 {
@@ -12776,6 +12849,11 @@ START: Project CSS
 }
 
 /* !END: Award CSS */
+@media (max-width: 1399px) {
+  .award-section__area-3 {
+    padding-top: 100px;
+  }
+}
 .award-section-box {
   display: flex;
   align-items: center;
@@ -13812,6 +13890,9 @@ START: Project CSS
     margin-left: 0;
   }
 }
+.award-section-4 .award-accordion .accordion-item .accordion-body .desc {
+  margin-bottom: 32px;
+}
 .award-section-4 .award-accordion .accordion-item .accordion-body-one {
   margin-left: 50%;
 }
@@ -14075,7 +14156,6 @@ START: Contact CSS
 @media only screen and (max-width: 992px) {
   .contact-content {
     margin-left: 0;
-    margin-top: 40px;
   }
 }
 
@@ -14089,9 +14169,6 @@ START: Contact CSS
   align-items: center;
   grid-template-columns: 60px 1fr;
   margin-bottom: 20px;
-}
-.contact-form .form-item-3 {
-  margin-bottom: 0;
 }
 .contact-form .form-item .icon {
   color: #696969;
@@ -14129,7 +14206,6 @@ START: Contact CSS
 .contact-form .form-item .icon-5 {
   position: absolute;
   top: 50%;
-  left: -20px;
   transform: translateY(-53%);
   color: var(--rr-heading-primary);
   border: none;
@@ -14237,12 +14313,12 @@ START: Contact CSS
 }
 @media (max-width: 1199px) {
   .contact-form .form-item .form-control-4 {
-    padding: 17px 0px 17px 66px;
+    padding: 17px 0px 17px 34px;
   }
 }
 @media only screen and (max-width: 767px) {
   .contact-form .form-item .form-control-4 {
-    padding: 17px 0px 17px 66px;
+    padding: 17px 0px 17px 34px;
   }
 }
 .contact-form .form-item.message-item {
@@ -14482,8 +14558,7 @@ START: Contact CSS
 }
 
 .contact__map {
-  padding: 0 70px 70px 70px;
-  margin-left: 43px;
+  padding: 0 0 70px 70px;
   position: relative;
 }
 .contact__map::before {
@@ -14734,7 +14809,7 @@ START: Contact CSS
 }
 @media (max-width: 1199px) {
   .contact-section-4 .contact-content-one {
-    padding: 50px 20px 48px 0px;
+    padding: 50px 20px 48px 17px;
   }
 }
 .contact-section-4 .contact-content-one .section-heading-one {
@@ -16249,7 +16324,7 @@ START: Footer CSS
 @media only screen and (max-width: 767px) {
   .h5-footer__text .title {
     font-size: 62px;
-    line-height: 48px;
+    line-height: 80px;
   }
 }
 
@@ -16336,7 +16411,7 @@ START: Footer CSS
 .footer-4-area .footer-bottom-wrapper .footer-menu-inner .part-one ul {
   display: flex;
   align-items: center;
-  gap: 33px;
+  gap: 23px;
 }
 @media only screen and (max-width: 767px) {
   .footer-4-area .footer-bottom-wrapper .footer-menu-inner .part-one ul {
@@ -16367,7 +16442,7 @@ START: Footer CSS
 .footer-4-area .footer-bottom-wrapper .footer-menu-inner .part-two ul {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 37px;
 }
 @media only screen and (max-width: 767px) {
   .footer-4-area .footer-bottom-wrapper .footer-menu-inner .part-two ul {

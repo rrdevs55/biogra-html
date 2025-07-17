@@ -903,7 +903,7 @@ START: Testimonial CSS
                 margin-top: 25px;
 
                 @include breakpoint(xxl) {
-                    br{
+                    br {
                         display: none;
                     }
                 }
@@ -943,6 +943,10 @@ START: Testimonial CSS
         overflow: hidden;
         width: 350px;
         margin-bottom: 40px;
+
+        @media only screen and (max-width: 450px) {
+             width: 260px;
+        }
     }
 
     .thumb-carousel {
