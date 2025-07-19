@@ -10927,7 +10927,7 @@ START: Testimonial CSS
 .hero-content .hero-title-wrap .title-icon {
   position: absolute;
   bottom: 9%;
-  right: 10%;
+  right: 8%;
 }
 @media (max-width: 1399px) {
   .hero-content .hero-title-wrap .title-icon {
@@ -12006,7 +12006,7 @@ START: Project CSS
   text-align: center;
   font-weight: 400;
   border-radius: 100px;
-  padding: 5px 20px;
+  padding: 2.5px 20px;
   border: 1px solid rgba(15, 15, 15, 0.1);
   border-radius: 100px;
 }
