@@ -482,7 +482,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 10px;
+  row-gap: 25px;
   column-gap: 10px;
 }
 .section-heading-1 .sub-heading {
@@ -846,6 +846,7 @@ ul {
   .section-heading {
     flex-wrap: wrap;
     row-gap: 20px;
+    column-gap: 10px;
   }
 }
 @media (max-width: 1199px) {
@@ -3313,9 +3314,6 @@ ul {
 .rr-primary-btn:hover i {
   transform: rotate(0deg);
 }
-.rr-primary-btn:focus {
-  color: var(--rr-color-heading-primary);
-}
 .rr-primary-btn.transparent {
   background-color: transparent;
   border: 1px solid var(--rr-color-theme-primary);
@@ -4805,6 +4803,18 @@ START: Header CSS
 /**----------------------------------------
 START: Blog CSS
 ----------------------------------------*/
+.blog-section-1 {
+  border-top: 1px solid rgba(15, 15, 15, 0.1);
+}
+.blog-section-1 .section-heading-1 .section-title {
+  padding-left: 90px;
+}
+@media only screen and (max-width: 992px) {
+  .blog-section-1 .section-heading-1 .section-title {
+    padding-left: 0;
+  }
+}
+
 .post-card-wrap {
   border-bottom: 1px solid var(--rr-color-border-1);
 }
@@ -4966,7 +4976,7 @@ START: Blog CSS
   color: var(--rr-color-heading-primary);
 }
 .post-meta li:not(:last-of-type) {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .post-meta li a:hover {
   color: var(--rr-color-theme-primary);
@@ -7961,11 +7971,6 @@ START: Testimonial CSS
     width: 100%;
   }
 }
-@media only screen and (max-width: 767px) {
-  .service-2__item .content .thumb-2 img {
-    display: none;
-  }
-}
 .service-2__item .content-3 {
   margin-left: -34px;
 }
@@ -7976,9 +7981,17 @@ START: Testimonial CSS
 }
 .service-2__item-2 {
   transition: all 0.4s ease;
-  padding: 70px;
+  padding: 70px 58px;
   border-top: 0;
   flex-wrap: nowrap;
+}
+.service-2__item-2:first-child {
+  padding: 60px 58px 70px 58px;
+}
+@media (max-width: 1199px) {
+  .service-2__item-2:first-child {
+    padding: 70px 15px 70px 15px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .service-2__item-2 {
@@ -7988,6 +8001,7 @@ START: Testimonial CSS
 @media only screen and (max-width: 767px) {
   .service-2__item-2 {
     padding: 15px;
+    flex-wrap: wrap;
   }
 }
 .service-2__item-2 .serivce-data span {
@@ -8025,6 +8039,7 @@ START: Testimonial CSS
 @media only screen and (max-width: 767px) {
   .service-2__item-2:hover .serivce-data-2 {
     text-align: end;
+    margin-top: 0;
   }
 }
 .service-2__item-2:hover .title-wrap-2 {
@@ -9152,6 +9167,11 @@ START: Testimonial CSS
 .about-content-wrap .about-mid-content .about-mid-item:not(:last-of-type) {
   margin-bottom: 100px;
 }
+@media only screen and (max-width: 576px) {
+  .about-content-wrap .about-mid-content .about-mid-item:not(:last-of-type) {
+    margin-bottom: 60px;
+  }
+}
 .about-content-wrap .about-mid-content .about-mid-item .about-exp-item {
   display: flex;
 }
@@ -9504,7 +9524,7 @@ START: Testimonial CSS
 .about-wrap-2 .about-counter-items {
   display: flex;
   align-items: center;
-  column-gap: 100px;
+  column-gap: 90px;
   border-top: 1px solid rgba(28, 28, 40, 0.1);
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
   padding: 70px 0 50px 0;
@@ -9533,7 +9553,7 @@ START: Testimonial CSS
   }
 }
 .about-wrap-2 .about-counter-items .about-counter .title .icon {
-  font-size: 70px;
+  font-size: 85px;
 }
 @media only screen and (max-width: 992px) {
   .about-wrap-2 .about-counter-items .about-counter .title .icon {
@@ -11371,7 +11391,7 @@ START: Testimonial CSS
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #696969;
+  color: #0F0F0F;
   margin-bottom: 0;
   padding-bottom: 22px;
   margin-top: 82px;
@@ -11387,6 +11407,7 @@ START: Testimonial CSS
   }
 }
 .hero-section-3 .title-wrap .dec p span {
+  font-weight: 600;
   color: #0F0F0F;
 }
 
@@ -11910,7 +11931,7 @@ START: Project CSS
 }
 .project-item .project-thumb {
   overflow: hidden;
-  max-width: 865px;
+  max-width: 885px;
   width: 100%;
 }
 .project-item .project-thumb img {
@@ -11973,6 +11994,12 @@ START: Project CSS
   .project-item .project-content .title {
     font-size: 18px;
   }
+}
+.project-item .project-content .title a {
+  transition: all 0.3s ease-in-out;
+}
+.project-item .project-content .title a:hover {
+  color: #696969;
 }
 .project-item .project-content .title-2 {
   font-weight: 600;
@@ -12041,6 +12068,12 @@ START: Project CSS
     flex-wrap: wrap;
   }
 }
+.project-item .project-content-2 .title a {
+  transition: all 0.3s ease-in-out;
+}
+.project-item .project-content-2 .title a:hover {
+  color: #696969;
+}
 .project-item.big-item .project-thumb {
   height: 700px;
 }
@@ -12084,7 +12117,7 @@ START: Project CSS
 }
 
 .project-item.project-item-2.big.item-2 {
-  margin-left: -35px;
+  margin-left: -46px;
 }
 @media (max-width: 1600px) {
   .project-item.project-item-2.big.item-2 {
@@ -12101,11 +12134,21 @@ START: Project CSS
   }
 }
 .project-section-2 .project-left {
-  margin-left: 36px;
+  margin-left: 26px;
 }
 @media (max-width: 1600px) {
   .project-section-2 .project-left {
     margin-left: 0;
+  }
+}
+.project-section-2 .project-left .last-item {
+  margin-left: -51px;
+  margin-right: 25px;
+}
+@media (max-width: 1600px) {
+  .project-section-2 .project-left .last-item {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -12138,9 +12181,13 @@ START: Project CSS
   }
 }
 .project-item-2.big .project-thumb {
-  max-width: 735px;
-  width: 100%;
+  width: 735px;
   height: 450px;
+}
+@media (max-width: 1600px) {
+  .project-item-2.big .project-thumb {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 992px) {
   .project-item-2.big .project-thumb {
@@ -13523,6 +13570,11 @@ START: Project CSS
 .skill-item-wrap .skill-item-2:not(:last-of-type) {
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 576px) {
+  .skill-item-wrap .skill-item-2:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+}
 .skill-item-wrap .skill-item-2 .icon {
   height: 116px;
   width: 116px;
@@ -14350,6 +14402,9 @@ START: Contact CSS
     padding-left: 50px;
   }
 }
+.contact-form .submit-btn .rr-primary-btn:focus {
+  border: 1px solid rgba(28, 28, 40, 0.1);
+}
 
 .blog-contact-form.form-2 {
   border: 1px solid var(--rr-color-border-1);
@@ -14824,6 +14879,10 @@ START: Contact CSS
   font-family: var(--rr-ff-heading);
   font-weight: var(--rr-fw-sbold);
   padding-left: 36px;
+}
+
+.h3-contact__us .rr-primary-btn:focus {
+  border: 1px solid rgba(28, 28, 40, 0.1);
 }
 
 /* !END: Theme Contact CSS */
@@ -16154,6 +16213,12 @@ START: Footer CSS
   margin-bottom: 40px;
   margin-bottom: 42px;
   margin-top: 20px;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 767px) {
+  .h2-footer-content .social-links {
+    gap: 20px;
+  }
 }
 .h2-footer-content .social-links li {
   transition: all 3s ease-in-out;
@@ -16182,6 +16247,12 @@ START: Footer CSS
   left: -80px;
   z-index: 1;
 }
+@media (max-width: 1199px) {
+  .h2-footer-contact .border-3 {
+    width: 100%;
+    left: 0;
+  }
+}
 .h2-footer-contact .border-4 {
   position: absolute;
   background: rgba(255, 255, 255, 0.1);
@@ -16192,6 +16263,12 @@ START: Footer CSS
   top: 60px;
   left: -80px;
   z-index: 1;
+}
+@media (max-width: 1199px) {
+  .h2-footer-contact .border-4 {
+    width: 100%;
+    left: 0;
+  }
 }
 .h2-footer-contact .border-5 {
   position: absolute;
@@ -16204,6 +16281,12 @@ START: Footer CSS
   left: -80px;
   z-index: 1;
 }
+@media (max-width: 1199px) {
+  .h2-footer-contact .border-5 {
+    width: 100%;
+    left: 0;
+  }
+}
 .h2-footer-contact .border-6 {
   position: absolute;
   background: rgba(255, 255, 255, 0.1);
@@ -16214,6 +16297,12 @@ START: Footer CSS
   top: 190px;
   left: -80px;
   z-index: 1;
+}
+@media (max-width: 1199px) {
+  .h2-footer-contact .border-6 {
+    width: 100%;
+    left: 0;
+  }
 }
 .h2-footer-contact span {
   display: block;

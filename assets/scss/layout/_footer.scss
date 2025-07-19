@@ -301,6 +301,11 @@ START: Footer CSS
             margin-bottom: 40px;
             margin-bottom: 42px;
             margin-top: 20px;
+            flex-wrap: wrap;
+
+            @include breakpoint(sm) {
+                gap: 20px;
+            }
 
             & li {
                 transition: all 3s ease-in-out;
@@ -333,6 +338,11 @@ START: Footer CSS
             top: 0;
             left: -80px;
             z-index: 1;
+
+            @include breakpoint(lg) {
+                width: 100%;
+                left: 0;
+            }
         }
 
         .border-4 {
@@ -345,6 +355,11 @@ START: Footer CSS
             top: 60px;
             left: -80px;
             z-index: 1;
+
+            @include breakpoint(lg) {
+                width: 100%;
+                left: 0;
+            }
         }
 
         .border-5 {
@@ -357,6 +372,11 @@ START: Footer CSS
             top: 120px;
             left: -80px;
             z-index: 1;
+
+            @include breakpoint(lg) {
+                width: 100%;
+                left: 0;
+            }
         }
 
         .border-6 {
@@ -369,6 +389,11 @@ START: Footer CSS
             top: 190px;
             left: -80px;
             z-index: 1;
+
+            @include breakpoint(lg) {
+                width: 100%;
+                left: 0;
+            }
         }
 
         & span {

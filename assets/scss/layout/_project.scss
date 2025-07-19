@@ -38,7 +38,7 @@ START: Project CSS
 
     .project-thumb {
         overflow: hidden;
-        max-width: 865px;
+        max-width: 885px;
         width: 100%;
 
         img {
@@ -116,6 +116,14 @@ START: Project CSS
                 font-size: 18px;
             }
 
+            a {
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: #696969;
+                }
+            }
+
             &-2 {
                 font-weight: 600;
                 font-size: 48px;
@@ -190,6 +198,16 @@ START: Project CSS
             }
         }
     }
+    .project-content-2 {
+        .title {
+            a {
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: #696969;
+                }
+            }
+        }
+    }
 
     &.big-item {
         .project-thumb {
@@ -238,7 +256,7 @@ START: Project CSS
 }
 
 .project-item.project-item-2.big.item-2 {
-    margin-left: -35px;
+    margin-left: -46px;
 
     @include breakpoint(xxl) {
         margin-left: 0;
@@ -256,10 +274,20 @@ START: Project CSS
     }
 
     .project-left {
-        margin-left: 36px;
+        margin-left: 26px;
 
         @include breakpoint(xxl) {
             margin-left: 0;
+        }
+
+        .last-item {
+            margin-left: -51px;
+            margin-right: 25px;
+
+            @include breakpoint(xxl) {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
     }
 }
@@ -293,9 +321,12 @@ START: Project CSS
 
     &.big {
         .project-thumb {
-            max-width: 735px;
-            width: 100%;
+            width: 735px;
             height: 450px;
+
+            @include breakpoint(xxl) {
+                 width: 100%;
+            }
 
             @include breakpoint(md) {
                 height: 350px;

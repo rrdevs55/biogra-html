@@ -259,6 +259,11 @@ START: Contact CSS
         @include breakpoint(sm) {
             padding-left: 50px;
         }
+        .rr-primary-btn {
+            &:focus {
+                border: 1px solid rgba(28, 28, 40, 0.1);
+            }
+        }
     }
 }
 
@@ -554,6 +559,8 @@ START: Contact CSS
         padding-left: 0px;
     }
 
+
+
 }
 
 // h5-contact css
@@ -740,12 +747,10 @@ START: Contact CSS
                             font-family: var(--rr-ff-body);
                         }
                     }
-
                     .one {
                         line-height: 44px;
                     }
                 }
-
             }
         }
     }
@@ -782,6 +787,14 @@ START: Contact CSS
         }
     }
 
+}
+
+.h3-contact__us {
+    .rr-primary-btn {
+        &:focus {
+            border: 1px solid rgba(28, 28, 40, 0.1);
+        }
+    }
 }
 
 /* !END: Theme Contact CSS */

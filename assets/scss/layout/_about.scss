@@ -96,6 +96,11 @@
 
             &:not(:last-of-type) {
                 margin-bottom: 100px;
+
+                @media only screen and (max-width: 576px) {
+                     margin-bottom: 60px;
+                }
+
             }
 
             .about-exp-item {
@@ -465,7 +470,7 @@
 
     .about-counter-items {
         @include flex-vertical-center;
-        column-gap: 100px;
+        column-gap: 90px;
         border-top: 1px solid rgba(28, 28, 40, 0.1);
         border-bottom: 1px solid rgba(28, 28, 40, 0.1);
         padding: 70px 0 50px 0;
@@ -494,7 +499,7 @@
                 }
 
                 .icon {
-                    font-size: 70px;
+                    font-size: 85px;
 
                     @include breakpoint(md) {
                         font-size: 45px;

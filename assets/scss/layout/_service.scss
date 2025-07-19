@@ -143,11 +143,12 @@
 }
 
 /* !END: Page Header CSS */
-.service-5{
+.service-5 {
     .section-heading {
         margin-bottom: 70px !important;
     }
 }
+
 .service-2 {
     .section-heading {
         margin-bottom: 0;
@@ -332,14 +333,6 @@
                         width: 100%;
                     }
                 }
-
-                &-2 {
-                    & img {
-                        @include breakpoint(sm) {
-                            display: none;
-                        }
-                    }
-                }
             }
 
             &-3 {
@@ -353,9 +346,19 @@
 
         &-2 {
             transition: all 0.4s ease;
-            padding: 70px;
+            padding: 70px 58px;
             border-top: 0;
             flex-wrap: nowrap;
+
+            &:first-child {
+                padding: 60px 58px 70px 58px;
+            }
+
+            @include breakpoint(lg) {
+                &:first-child {
+                    padding: 70px 15px 70px 15px;
+                }
+            }
 
             @include breakpoint(md) {
                 padding: 20px;
@@ -363,6 +366,7 @@
 
             @include breakpoint(sm) {
                 padding: 15px;
+                flex-wrap: wrap;
             }
 
             .serivce-data {
@@ -399,6 +403,7 @@
 
                     @include breakpoint(sm) {
                         text-align: end;
+                        margin-top: 0;
                     }
                 }
 
@@ -816,7 +821,7 @@
         margin-top: 14px;
 
         @include breakpoint(md) {
-             margin-left: 30px;
+            margin-left: 30px;
         }
 
         @include breakpoint(sm) {

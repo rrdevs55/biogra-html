@@ -127,9 +127,9 @@
             transform: rotate(0deg);
         }
     }
-    &:focus{
-        color: var(--rr-color-heading-primary);
-    }
+    // &:focus{
+    //     color: var(--rr-color-heading-primary);
+    // }
     &.transparent{
         background-color: transparent;
         border: 1px solid var(--rr-color-theme-primary);

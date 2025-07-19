@@ -3,6 +3,19 @@
 /**----------------------------------------
 START: Blog CSS
 ----------------------------------------*/
+.blog-section-1 {
+    border-top: 1px solid rgba(15, 15, 15, 0.1);
+
+    .section-heading-1 {
+        .section-title {
+            padding-left: 90px;
+
+            @include breakpoint(md) {
+                padding-left: 0;
+            }
+        }
+    }
+}
 
 .post-card-wrap {
     border-bottom: 1px solid var(--rr-color-border-1);
@@ -162,7 +175,7 @@ START: Blog CSS
         }
 
         &:not(:last-of-type) {
-            margin-right: 20px;
+            margin-right: 30px;
         }
 
         a {
