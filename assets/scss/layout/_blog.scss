@@ -986,16 +986,16 @@ START: Blog CSS
         gap: 30px;
         align-items: center;
 
-        @include breakpoint(lg) {
-            flex-wrap: wrap;
-        }
+        // @include breakpoint(lg) {
+        //     flex-wrap: wrap;
+        // }
 
         &-2 {
             flex-wrap: nowrap;
 
-            @include breakpoint(sm) {
-                flex-wrap: wrap;
-            }
+            // @include breakpoint(sm) {
+            //     flex-wrap: wrap;
+            // }
         }
 
         &_thumb {
@@ -1075,9 +1075,9 @@ START: Blog CSS
         }
 
         &-2 {
-            @include breakpoint(sm) {
-                flex-wrap: wrap;
-            }
+            // @include breakpoint(sm) {
+            //     flex-wrap: wrap;
+            // }
         }
     }
 }

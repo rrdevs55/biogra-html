@@ -25,7 +25,7 @@ START: Contact CSS
             display: none;
         }
 
-         @include breakpoint(md) {
+        @include breakpoint(md) {
             max-width: 300px;
         }
 
@@ -105,7 +105,7 @@ START: Contact CSS
                 border: none;
                 z-index: 999;
                 height: initial;
-                width: initial; 
+                width: initial;
             }
 
             &-4 {
@@ -262,6 +262,7 @@ START: Contact CSS
         @include breakpoint(sm) {
             padding-left: 50px;
         }
+
         .rr-primary-btn {
             &:focus {
                 border: 1px solid rgba(28, 28, 40, 0.1);
@@ -330,17 +331,28 @@ START: Contact CSS
     }
 }
 
+.tab-contact-section-2 {
+    .tab-contact__wrap{
+        @include breakpoint(sm) {
+            padding: 40px 0px 40px 12px;
+        }
+    }
+    .tab-contact__meta {
+        @include breakpoint(sm) {
+            margin-left: 0;
+        }
+    }
+}
 
 .tab-contact {
     &__wrap {
         padding: 65px 65px 103px 70px;
-
-        @include breakpoint(sm) {
-            padding: 40px 0px 102px 3px;
-        }
-
         border: 1px solid rgba(15, 15, 15, 0.15);
         border-radius: 10px;
+
+        @include breakpoint(sm) {
+            padding: 40px 0px 102px 12px;
+        }
 
         .title {
             font-weight: 600;
@@ -750,6 +762,7 @@ START: Contact CSS
                             font-family: var(--rr-ff-body);
                         }
                     }
+
                     .one {
                         line-height: 44px;
                     }
@@ -796,6 +809,14 @@ START: Contact CSS
     .rr-primary-btn {
         &:focus {
             border: 1px solid rgba(28, 28, 40, 0.1);
+        }
+    }
+}
+
+.contact-us-section {
+    .contact-page {
+        @include breakpoint(sm) {
+            margin-top: 50px;
         }
     }
 }

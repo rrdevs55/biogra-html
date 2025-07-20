@@ -186,11 +186,27 @@ START: Breadcrumb SCSS
                             font-size: 55px;
                             line-height: 65px;
                         }
+
                         @include breakpoint(sm) {
                             font-size: 45px;
                             line-height: 55px;
                         }
 
+                    }
+                }
+
+                .breadcrumb-title-blog {
+                    @include breakpoint(lg) {
+                        font-size: 49px;
+                        line-height: 61px;
+                    }
+                    @include breakpoint(md) {
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                    @include breakpoint(sm) {
+                        font-size: 26px;
+                        line-height: 36px;
                     }
                 }
 

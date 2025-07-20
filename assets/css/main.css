@@ -5714,18 +5714,8 @@ START: Blog CSS
 .sidebar__widget .sidebar-post:last-child {
   margin-bottom: 0;
 }
-@media (max-width: 1199px) {
-  .sidebar__widget .sidebar-post {
-    flex-wrap: wrap;
-  }
-}
 .sidebar__widget .sidebar-post-2 {
   flex-wrap: nowrap;
-}
-@media only screen and (max-width: 767px) {
-  .sidebar__widget .sidebar-post-2 {
-    flex-wrap: wrap;
-  }
 }
 .sidebar__widget .sidebar-post_thumb img {
   width: 100%;
@@ -5798,12 +5788,6 @@ START: Blog CSS
   line-height: 19px;
   color: #696969;
 }
-@media only screen and (max-width: 767px) {
-  .sidebar__widget .sidebar-post-2 {
-    flex-wrap: wrap;
-  }
-}
-
 .bottom-button {
   gap: 10px;
   margin-top: 40px;
@@ -14574,6 +14558,17 @@ START: Contact CSS
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .tab-contact-section-2 .tab-contact__wrap {
+    padding: 40px 0px 40px 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tab-contact-section-2 .tab-contact__meta {
+    margin-left: 0;
+  }
+}
+
 .tab-contact__wrap {
   padding: 65px 65px 103px 70px;
   border: 1px solid rgba(15, 15, 15, 0.15);
@@ -14581,7 +14576,7 @@ START: Contact CSS
 }
 @media only screen and (max-width: 767px) {
   .tab-contact__wrap {
-    padding: 40px 0px 102px 3px;
+    padding: 40px 0px 102px 12px;
   }
 }
 .tab-contact__wrap .title {
@@ -14995,6 +14990,12 @@ START: Contact CSS
 
 .h3-contact__us .rr-primary-btn:focus {
   border: 1px solid rgba(28, 28, 40, 0.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-us-section .contact-page {
+    margin-top: 50px;
+  }
 }
 
 /* !END: Theme Contact CSS */
@@ -16939,6 +16940,24 @@ START: Breadcrumb SCSS
   .breadcrumb-section .breadcrumb-wrap .breadcrumb-content .breadcrumb-title-wrap .breadcrumb-title-4 {
     font-size: 45px;
     line-height: 55px;
+  }
+}
+@media (max-width: 1199px) {
+  .breadcrumb-section .breadcrumb-wrap .breadcrumb-content .breadcrumb-title-wrap .breadcrumb-title-blog {
+    font-size: 49px;
+    line-height: 61px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .breadcrumb-section .breadcrumb-wrap .breadcrumb-content .breadcrumb-title-wrap .breadcrumb-title-blog {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .breadcrumb-section .breadcrumb-wrap .breadcrumb-content .breadcrumb-title-wrap .breadcrumb-title-blog {
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 .breadcrumb-section .breadcrumb-wrap .breadcrumb-content .breadcrumb-title-wrap .author {
