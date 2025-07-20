@@ -60,14 +60,14 @@ START: Contact CSS
     }
 }
 
-.contact-content {
-    margin-left: 30px;
+// .contact-content {
+//     margin-left: 30px;
 
-    @include breakpoint(md) {
-        margin-left: 0;
-        // margin-top: 40px;
-    }
-}
+//     @include breakpoint(md) {
+//         margin-left: 0;
+//         // margin-top: 40px;
+//     }
+// }
 
 .form-control:focus {
     &:focus {
@@ -104,6 +104,8 @@ START: Contact CSS
                 color: var(--rr-heading-primary);
                 border: none;
                 z-index: 999;
+                height: initial;
+                width: initial; 
             }
 
             &-4 {
@@ -173,7 +175,7 @@ START: Contact CSS
                     border-color: #1C1C28;
                     border-bottom: 1px solid #1C1C28;
                     border-right: 1px solid #1C1C28;
-                    right: 35px;
+                    // right: 35px; 
                 }
 
                 .list {
@@ -191,11 +193,12 @@ START: Contact CSS
                 border-bottom: 1px solid rgba(28, 28, 40, 0.1);
                 border-radius: 0;
                 padding: 7px 0px 17px 35px;
-                margin-left: 20px;
+                // margin-left: 20px;
             }
 
             &-3 {
                 margin-left: 0;
+                padding: 7px 0px 17px 15px;
             }
 
             &-4 {
@@ -313,12 +316,12 @@ START: Contact CSS
 }
 
 .contact-content-2 {
-    margin-left: 15px;
+    // margin-left: 15px;
 
-    @include breakpoint(sm) {
-        margin-top: 30px;
-        margin-left: 0;
-    }
+    // @include breakpoint(sm) {
+    //     margin-top: 30px;
+    //     margin-left: 0;
+    // }
 
     &-3 {
         @include breakpoint(lg) {
@@ -417,13 +420,13 @@ START: Contact CSS
 }
 
 
-.contact-content-2 {
-    margin-right: 30px;
+// .contact-content-2 {
+//     margin-right: 30px;
 
-    @include breakpoint(lg) {
-        margin-right: 0;
-    }
-}
+//     @include breakpoint(lg) {
+//         margin-right: 0;
+//     }
+// }
 
 .form-control-5 {
     height: 250px;

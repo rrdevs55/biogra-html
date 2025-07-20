@@ -198,11 +198,13 @@ START: Project CSS
             }
         }
     }
+
     .project-content-2 {
         .title {
             a {
                 transition: all 0.3s ease-in-out;
-                &:hover{
+
+                &:hover {
                     color: #696969;
                 }
             }
@@ -325,7 +327,7 @@ START: Project CSS
             height: 450px;
 
             @include breakpoint(xxl) {
-                 width: 100%;
+                width: 100%;
             }
 
             @include breakpoint(md) {
@@ -716,6 +718,17 @@ START: Project CSS
         .row:last-child .col-xl-6:last-child .project-section-4-item {
             margin-bottom: 0;
         }
+
+        .section-heading {
+            .section-title-4 {
+                margin-left: -30px;
+
+                @include breakpoint(sm) {
+                    margin-left: 0;
+                }
+            }
+
+        }
     }
 
     &-item {
@@ -906,6 +919,30 @@ START: Project CSS
 .project-list-3 {
     & li {
         padding: 7px 6px;
+    }
+}
+
+.project-details-section {
+    @include breakpoint(md) {
+        padding-top: 50px;
+    }
+
+    .section-br-bottom {
+        @include breakpoint(md) {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.project-service-section {
+    @include breakpoint(md) {
+        padding-top: 50px;
+    }
+
+    .project-service__wrap {
+        @include breakpoint(md) {
+            margin-top: 50px;
+        }
     }
 }
 

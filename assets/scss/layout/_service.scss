@@ -1128,6 +1128,7 @@
 
         @include breakpoint(sm) {
             gap: 16px;
+            flex-wrap: wrap;
         }
     }
 
@@ -1201,6 +1202,10 @@
         display: flex;
         gap: 140px;
 
+        @include breakpoint(xxxl) {
+            padding: 0 15px;
+        }
+
         @include breakpoint(xl) {
             gap: 100px;
         }
@@ -1216,6 +1221,10 @@
         &-2 {
             flex-direction: row-reverse;
             gap: 140px;
+
+            @include breakpoint(xxxl) {
+                padding: 0 15px;
+            }
 
             @include breakpoint(xxl) {
                 gap: 100px;

@@ -524,6 +524,15 @@ START: Footer CSS
 
 
 //// Home-4 footer-4 area start 
+.footer-4-area {
+    .section-heading {
+        margin-bottom: 103px;
+
+        @include breakpoint(md) {
+            margin-bottom: 40px;
+        }
+    }
+}
 
 .footer-4 {
     &-area {

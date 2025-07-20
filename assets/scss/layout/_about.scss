@@ -14,6 +14,16 @@
     }
 }
 
+.about-content {
+    .section-heading {
+        @include breakpoint(lg) {
+            column-gap: 85px;
+        }
+
+
+    }
+}
+
 .about-content-wrap {
     @include flex-vertical-center;
     align-items: start;
@@ -98,7 +108,7 @@
                 margin-bottom: 100px;
 
                 @media only screen and (max-width: 576px) {
-                     margin-bottom: 60px;
+                    margin-bottom: 60px;
                 }
 
             }
@@ -1705,6 +1715,9 @@
         align-items: center;
         flex-wrap: wrap;
 
+        @include breakpoint(md) {
+            justify-content: center;
+        }
         @include breakpoint(sm) {
             flex-wrap: wrap;
         }
@@ -1876,6 +1889,14 @@
                         color: #9175FF;
                         border-radius: 100%;
                     }
+                }
+            }
+        }
+
+        .about-btn {
+            a {
+                &:hover {
+                    border: 1px solid #9175FF;
                 }
             }
         }

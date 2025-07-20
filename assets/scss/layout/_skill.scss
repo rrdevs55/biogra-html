@@ -535,6 +535,7 @@
                     &:not(.collapsed) {
                         border-top: 1px solid rgba(23, 23, 23, 0.1);
                         border-bottom: none;
+                        padding-top: 38px;
 
                         &:after {
 
@@ -578,7 +579,7 @@
                 margin-top: -67px;
                 position: relative;
                 z-index: 22227;
-                padding: 0 0 40px 0;
+                padding: 0 0 30px 0;
 
                 @include breakpoint(md) {
                     margin-top: 0;

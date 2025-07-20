@@ -48,7 +48,7 @@ START: Testimonial CSS
 }
 
 .testi-item {
-    background-color: #F3F3F3;
+    background-color: #F3F3F3 !important;
     padding: 50px;
 
     @include breakpoint(xxl) {
@@ -621,6 +621,22 @@ START: Testimonial CSS
 }
 
 // h5-testimonial css
+.h5-testimonial-section {
+    .section-br-bottom {
+        padding-bottom: 100px;
+
+        @include breakpoint(lg) {
+            padding-bottom: 60px;
+        }
+        @include breakpoint(sm) {
+            padding-bottom: 40px;
+        }
+
+        .section-heading {
+            margin-bottom: 0;
+        }
+    }
+}
 
 .h5-testimonial {
     &__thumb {
@@ -907,6 +923,11 @@ START: Testimonial CSS
                         display: none;
                     }
                 }
+
+                @include breakpoint(sm) {
+                    font-size: 19px;
+                    line-height: 30px;
+                }
             }
         }
     }
@@ -945,7 +966,7 @@ START: Testimonial CSS
         margin-bottom: 40px;
 
         @media only screen and (max-width: 450px) {
-             width: 260px;
+            width: 260px;
         }
     }
 

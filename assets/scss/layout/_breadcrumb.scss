@@ -33,6 +33,7 @@ START: Breadcrumb SCSS
 
         @include breakpoint(sm) {
             padding-top: 50px;
+            padding-bottom: 50px;
         }
 
         .breadcrumb-content {
@@ -116,7 +117,7 @@ START: Breadcrumb SCSS
                     }
 
                     @media only screen and (max-width: 375px) {
-                        font-size: 32px;
+                        font-size: 31px;
                         line-height: 60px;
 
                         .title-border {

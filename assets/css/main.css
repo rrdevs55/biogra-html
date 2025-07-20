@@ -3603,6 +3603,20 @@ ul {
   }
 }
 
+.section-space-bottom-170 {
+  padding-bottom: 170px;
+}
+@media only screen and (max-width: 992px) {
+  .section-space-bottom-170 {
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section-space-bottom-170 {
+    padding-bottom: 70px;
+  }
+}
+
 .section-title {
   font-size: 48px;
   line-height: 60px;
@@ -5211,6 +5225,16 @@ START: Blog CSS
   position: relative;
   border-bottom: 1px solid rgba(15, 15, 15, 0.1);
 }
+@media only screen and (max-width: 992px) {
+  .h3-blog-wrapper .blog-cta {
+    gap: 15px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .h3-blog-wrapper .blog-cta {
+    justify-content: space-between;
+  }
+}
 @media only screen and (max-width: 767px) {
   .h3-blog-wrapper .blog-cta {
     gap: 20px;
@@ -6060,13 +6084,28 @@ START: Blog CSS
   content: "";
   height: 115%;
   width: 1px;
-  top: -3.3%;
+  top: -5.1%;
   bottom: 0;
   right: -24px;
   background: rgba(15, 15, 15, 0.1);
 }
 @media (max-width: 1399px) {
   .blog-border::before {
+    height: 116%;
+  }
+}
+.blog-border-2::before {
+  position: absolute;
+  content: "";
+  height: 115%;
+  width: 1px;
+  top: -3.3% !important;
+  bottom: 0;
+  right: -24px;
+  background: rgba(15, 15, 15, 0.1);
+}
+@media (max-width: 1399px) {
+  .blog-border-2::before {
     height: 116%;
   }
 }
@@ -6150,12 +6189,12 @@ START: Blog CSS
   font-size: 16px;
   line-height: 28px;
   color: #696969;
-  padding: 34.5px 20px 34.5px 40px;
+  padding: 34.5px 188px 34.5px 40px;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 767px) {
   .contact-us__form-wrapper .contact-us__form .contact-us__input-5 input {
-    padding: 30px 20px 30px 20px;
+    padding: 30px 183px 30px 20px;
   }
 }
 .contact-us__form-wrapper .contact-us__form .contact-us__input-5 .contact-btn {
@@ -6246,7 +6285,7 @@ START: Blog CSS
   }
 }
 .blog-section-4-item:last-child {
-  padding-bottom: 0;
+  border-bottom: 1px solid rgba(23, 23, 23, 0.1);
 }
 .blog-section-4-item .author {
   display: flex;
@@ -6370,6 +6409,26 @@ START: Blog CSS
   }
 }
 
+.blog-grid-section {
+  padding-top: 130px;
+  border-top: 1px solid rgba(15, 15, 15, 0.1);
+}
+@media (max-width: 1199px) {
+  .blog-grid-section {
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .blog-grid-section {
+    padding-top: 80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blog-grid-section {
+    padding-top: 70px;
+  }
+}
+
 /* !END: Theme Blog CSS */
 /**----------------------------------------
 START: Testimonial CSS
@@ -6414,7 +6473,7 @@ START: Testimonial CSS
 }
 
 .testi-item {
-  background-color: #F3F3F3;
+  background-color: #F3F3F3 !important;
   padding: 50px;
 }
 @media (max-width: 1600px) {
@@ -6941,6 +7000,23 @@ START: Testimonial CSS
   object-fit: cover;
 }
 
+.h5-testimonial-section .section-br-bottom {
+  padding-bottom: 100px;
+}
+@media (max-width: 1199px) {
+  .h5-testimonial-section .section-br-bottom {
+    padding-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .h5-testimonial-section .section-br-bottom {
+    padding-bottom: 40px;
+  }
+}
+.h5-testimonial-section .section-br-bottom .section-heading {
+  margin-bottom: 0;
+}
+
 .h5-testimonial__thumb img {
   width: 100%;
   height: 100%;
@@ -7189,6 +7265,12 @@ START: Testimonial CSS
 @media (max-width: 1600px) {
   .h3-testimonial__content .content h5 br {
     display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .h3-testimonial__content .content h5 {
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 .h3-testimonial_item {
@@ -8681,6 +8763,7 @@ START: Testimonial CSS
 @media only screen and (max-width: 767px) {
   .service-details__item {
     gap: 16px;
+    flex-wrap: wrap;
   }
 }
 .service-details__icon {
@@ -8749,6 +8832,11 @@ START: Testimonial CSS
   display: flex;
   gap: 140px;
 }
+@media (max-width: 1700px) {
+  .awards-1__wrapper {
+    padding: 0 15px;
+  }
+}
 @media (max-width: 1399px) {
   .awards-1__wrapper {
     gap: 100px;
@@ -8767,6 +8855,11 @@ START: Testimonial CSS
 .awards-1__wrapper-2 {
   flex-direction: row-reverse;
   gap: 140px;
+}
+@media (max-width: 1700px) {
+  .awards-1__wrapper-2 {
+    padding: 0 15px;
+  }
 }
 @media (max-width: 1600px) {
   .awards-1__wrapper-2 {
@@ -9076,6 +9169,12 @@ START: Testimonial CSS
 @media only screen and (max-width: 992px) {
   .about-section-2 .about-heading-wrap {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about-content .section-heading {
+    column-gap: 85px;
   }
 }
 
@@ -10672,6 +10771,11 @@ START: Testimonial CSS
   align-items: center;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 992px) {
+  .brand__item {
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 767px) {
   .brand__item {
     flex-wrap: wrap;
@@ -10827,6 +10931,9 @@ START: Testimonial CSS
   background: white;
   color: #9175FF;
   border-radius: 100%;
+}
+.about-section-4-content .about-btn a:hover {
+  border: 1px solid #9175FF;
 }
 
 /**----------------------------------------
@@ -11418,7 +11525,7 @@ START: Testimonial CSS
 }
 @media (max-width: 1600px) {
   .hero-section-5 {
-    padding: 0px 15px;
+    padding: 50px 15px;
   }
 }
 .hero-section-5 .hero-5-wrapper {
@@ -12527,6 +12634,14 @@ START: Project CSS
 .project-section-4-wrapper .row:last-child .col-xl-6:last-child .project-section-4-item {
   margin-bottom: 0;
 }
+.project-section-4-wrapper .section-heading .section-title-4 {
+  margin-left: -30px;
+}
+@media only screen and (max-width: 767px) {
+  .project-section-4-wrapper .section-heading .section-title-4 {
+    margin-left: 0;
+  }
+}
 .project-section-4-item {
   position: relative;
 }
@@ -12699,6 +12814,28 @@ START: Project CSS
 
 .project-list-3 li {
   padding: 7px 6px;
+}
+
+@media only screen and (max-width: 992px) {
+  .project-details-section {
+    padding-top: 50px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .project-details-section .section-br-bottom {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .project-service-section {
+    padding-top: 50px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .project-service-section .project-service__wrap {
+    margin-top: 50px;
+  }
 }
 
 /* !END: Project CSS */
@@ -13899,6 +14036,7 @@ START: Project CSS
 .award-section-4 .award-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   border-top: 1px solid rgba(23, 23, 23, 0.1);
   border-bottom: none;
+  padding-top: 38px;
 }
 .award-section-4 .award-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed):after {
   transform: rotate(-45deg);
@@ -13934,7 +14072,7 @@ START: Project CSS
   margin-top: -67px;
   position: relative;
   z-index: 22227;
-  padding: 0 0 40px 0;
+  padding: 0 0 30px 0;
 }
 @media only screen and (max-width: 992px) {
   .award-section-4 .award-accordion .accordion-item .accordion-body {
@@ -14202,15 +14340,6 @@ START: Contact CSS
   object-fit: cover;
 }
 
-.contact-content {
-  margin-left: 30px;
-}
-@media only screen and (max-width: 992px) {
-  .contact-content {
-    margin-left: 0;
-  }
-}
-
 .form-control:focus:focus {
   box-shadow: none;
   border-color: #0F0F0F;
@@ -14245,6 +14374,8 @@ START: Contact CSS
   color: var(--rr-heading-primary);
   border: none;
   z-index: 999;
+  height: initial;
+  width: initial;
 }
 .contact-form .form-item .icon-4 {
   position: absolute;
@@ -14318,7 +14449,6 @@ START: Contact CSS
   border-color: #1C1C28;
   border-bottom: 1px solid #1C1C28;
   border-right: 1px solid #1C1C28;
-  right: 35px;
 }
 .contact-form .form-item .form-control.nice-select .list {
   background-color: var(--rr-color-common-white);
@@ -14332,10 +14462,10 @@ START: Contact CSS
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
   border-radius: 0;
   padding: 7px 0px 17px 35px;
-  margin-left: 20px;
 }
 .contact-form .form-item .form-control-3 {
   margin-left: 0;
+  padding: 7px 0px 17px 15px;
 }
 .contact-form .form-item .form-control-4 {
   font-weight: var(--rr-fw-regular);
@@ -14438,15 +14568,6 @@ START: Contact CSS
   }
 }
 
-.contact-content-2 {
-  margin-left: 15px;
-}
-@media only screen and (max-width: 767px) {
-  .contact-content-2 {
-    margin-top: 30px;
-    margin-left: 0;
-  }
-}
 @media (max-width: 1199px) {
   .contact-content-2-3 {
     margin-left: 0;
@@ -14530,15 +14651,6 @@ START: Contact CSS
 @media only screen and (max-width: 767px) {
   .tab-contact__maps .map {
     height: 400px;
-  }
-}
-
-.contact-content-2 {
-  margin-right: 30px;
-}
-@media (max-width: 1199px) {
-  .contact-content-2 {
-    margin-right: 0;
   }
 }
 
@@ -16417,6 +16529,15 @@ START: Footer CSS
   }
 }
 
+.footer-4-area .section-heading {
+  margin-bottom: 103px;
+}
+@media only screen and (max-width: 992px) {
+  .footer-4-area .section-heading {
+    margin-bottom: 40px;
+  }
+}
+
 .footer-4-area {
   background: #fff;
   padding-bottom: 41px;
@@ -16661,6 +16782,7 @@ START: Breadcrumb SCSS
 @media only screen and (max-width: 767px) {
   .breadcrumb-section .breadcrumb-wrap {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .breadcrumb-section .breadcrumb-wrap .breadcrumb-content {
@@ -16748,7 +16870,7 @@ START: Breadcrumb SCSS
 }
 @media only screen and (max-width: 375px) {
   .breadcrumb-section .breadcrumb-wrap .breadcrumb-content .breadcrumb-title-wrap .breadcrumb-title {
-    font-size: 32px;
+    font-size: 31px;
     line-height: 60px;
   }
   .breadcrumb-section .breadcrumb-wrap .breadcrumb-content .breadcrumb-title-wrap .breadcrumb-title .title-border {
@@ -17177,7 +17299,7 @@ START: Breadcrumb SCSS
   margin-right: 66px;
   border: 1px solid rgba(15, 15, 15, 0.1);
 }
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .faq__category {
     margin-right: 20px;
   }
@@ -17264,6 +17386,7 @@ START: Breadcrumb SCSS
   .fact__wrapper {
     gap: 0px;
     margin-bottom: 30px;
+    justify-content: center;
   }
 }
 .fact__item p {
@@ -17279,6 +17402,12 @@ START: Breadcrumb SCSS
   line-height: 121px;
   letter-spacing: -0.03em;
   color: #1C1C28;
+}
+@media only screen and (max-width: 767px) {
+  .fact__item h2 {
+    font-size: 70px;
+    line-height: 100px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

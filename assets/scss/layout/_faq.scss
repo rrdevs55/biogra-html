@@ -174,7 +174,7 @@
         margin-right: 66px;
         border: 1px solid rgba(15, 15, 15, 0.1);
 
-        @include breakpoint(lg) {
+        @include breakpoint(xl) {
             margin-right: 20px;
         }
 
