@@ -30,7 +30,7 @@ START: Sidebar CSS
     overflow-y: auto;
     visibility: hidden;
     transition: all 0.5s ease-in-out;
-    padding: 60px 40px;
+    padding: 40px;
 }
 
 .open-sidebar .sidebar-area {
@@ -288,30 +288,5 @@ START: Sidebar CSS
         color: var(--rr-color-theme-primary);
     }
 }
-
-.side-menu-social{
-    margin-top: 40px;
-    list-style: none;
-    li{ 
-        display: inline-flex;
-        &:not(:last-of-type){
-            margin-right: 10px;
-        }
-        a{
-            background-color: var(--rr-color-border-1);
-            font-size: 17px;
-            color: var(--rr-color-text-body);
-            height: 40px;
-            width: 40px;
-            @include flex-center;
-            border: 1px solid var(--rr-color-border-1);
-            &:hover{
-                background-color: var(--rr-color-theme-primary);
-                color: var(--rr-color-common-white);
-            }
-        }
-    }
-}
-
 
 /* !END: Sidebar CSS */

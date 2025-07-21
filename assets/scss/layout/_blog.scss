@@ -4,13 +4,25 @@
 START: Blog CSS
 ----------------------------------------*/
 .blog-section-1 {
+    @include breakpoint(xl) {
+        padding: 100px 0;
+    }
+
     border-top: 1px solid rgba(15, 15, 15, 0.1);
 
     .section-heading-1 {
+        .sub-heading {
+            @include breakpoint(lg) {
+                &::before {
+                    top: 50%;
+                }
+            }
+        }
+
         .section-title {
             padding-left: 90px;
 
-            @include breakpoint(md) {
+            @include breakpoint(lg) {
                 padding-left: 0;
             }
         }
@@ -44,7 +56,7 @@ START: Blog CSS
         margin-right: 130px;
         border-right: 1px solid var(--rr-color-border-1);
 
-        @include breakpoint(lg) {
+        @include breakpoint(xl) {
             padding-right: 60px;
             margin-right: 60px;
         }
@@ -93,6 +105,11 @@ START: Blog CSS
     }
 
     .post-content {
+
+        @include breakpoint(xl) {
+            padding: 50px 0 60px 0;
+        }
+
         .title {
             font-size: 24px;
             font-weight: 600;
@@ -975,7 +992,6 @@ START: Blog CSS
             min-width: 100px;
             min-height: 100px;
             border-radius: 5px;
-
         }
 
         &:last-child {
@@ -1417,21 +1433,22 @@ START: Blog CSS
             height: 116%;
         }
     }
+
     &-2 {
         &::before {
-        position: absolute;
-        content: "";
-        height: 115%;
-        width: 1px;
-        top: -3.3% !important;
-        bottom: 0;
-        right: -24px;
-        background: rgba(15, 15, 15, 0.1);
+            position: absolute;
+            content: "";
+            height: 115%;
+            width: 1px;
+            top: -3.3% !important;
+            bottom: 0;
+            right: -24px;
+            background: rgba(15, 15, 15, 0.1);
 
-        @include breakpoint(xl) {
-            height: 116%;
+            @include breakpoint(xl) {
+                height: 116%;
+            }
         }
-    }
     }
 
     &-2 {
@@ -1778,9 +1795,11 @@ START: Blog CSS
     @include breakpoint(lg) {
         padding-top: 100px;
     }
+
     @include breakpoint(md) {
         padding-top: 80px;
     }
+
     @include breakpoint(sm) {
         padding-top: 70px;
     }

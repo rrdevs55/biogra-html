@@ -4820,10 +4820,20 @@ START: Blog CSS
 .blog-section-1 {
   border-top: 1px solid rgba(15, 15, 15, 0.1);
 }
+@media (max-width: 1399px) {
+  .blog-section-1 {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .blog-section-1 .section-heading-1 .sub-heading::before {
+    top: 50%;
+  }
+}
 .blog-section-1 .section-heading-1 .section-title {
   padding-left: 90px;
 }
-@media only screen and (max-width: 992px) {
+@media (max-width: 1199px) {
   .blog-section-1 .section-heading-1 .section-title {
     padding-left: 0;
   }
@@ -4860,7 +4870,7 @@ START: Blog CSS
   margin-right: 130px;
   border-right: 1px solid var(--rr-color-border-1);
 }
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .post-card .post-thumb-wrap {
     padding-right: 60px;
     margin-right: 60px;
@@ -4908,6 +4918,11 @@ START: Blog CSS
   transition: 0.3s ease-in-out;
   transform: scale(1);
   border-radius: 10px;
+}
+@media (max-width: 1399px) {
+  .post-card .post-content {
+    padding: 50px 0 60px 0;
+  }
 }
 .post-card .post-content .title {
   font-size: 24px;
@@ -6417,12 +6432,19 @@ START: Blog CSS
 /**----------------------------------------
 START: Testimonial CSS
 ----------------------------------------*/
+@media only screen and (max-width: 992px) {
+  .testimonial-section-1 .section-heading {
+    display: block;
+  }
+}
 .testimonial-section-1 .section-heading .section-title {
   margin-left: -47px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .testimonial-section-1 .section-heading .section-title {
     margin-left: 0;
+    margin-top: 15px;
+    max-width: 291px;
   }
 }
 
@@ -6434,7 +6456,7 @@ START: Testimonial CSS
   padding-bottom: 75px;
 }
 .testi-carousel .swiper-pagination {
-  bottom: 0;
+  bottom: -10px;
 }
 .testi-carousel .swiper-pagination .swiper-pagination-bullet {
   background-color: var(--rr-color-heading-primary);
@@ -9172,7 +9194,7 @@ START: Testimonial CSS
     display: block;
   }
 }
-@media (max-width: 1199px) {
+@media only screen and (max-width: 767px) {
   .about-content-wrap {
     flex-wrap: wrap;
   }
@@ -9228,6 +9250,11 @@ START: Testimonial CSS
     margin-right: 0;
   }
 }
+@media (max-width: 1199px) {
+  .about-content-wrap .about-left-content .about-author-img {
+    display: none;
+  }
+}
 .about-content-wrap .about-mid-content {
   height: 100%;
 }
@@ -9257,11 +9284,6 @@ START: Testimonial CSS
 }
 .about-content-wrap .about-mid-content .about-mid-item .about-exp-item {
   display: flex;
-}
-@media only screen and (max-width: 576px) {
-  .about-content-wrap .about-mid-content .about-mid-item .about-exp-item {
-    display: block;
-  }
 }
 .about-content-wrap .about-mid-content .about-mid-item .about-exp-item:not(:last-of-type) {
   margin-bottom: 30px;
@@ -9502,6 +9524,21 @@ START: Testimonial CSS
     margin-right: 3px;
   }
 }
+@media (max-width: 1600px) {
+  .about-content-wrap .about-ed-social li .rr-primary-btn-3 {
+    margin-left: 65px;
+  }
+}
+@media (max-width: 1399px) {
+  .about-content-wrap .about-ed-social li .rr-primary-btn-3 {
+    margin-left: 53px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-content-wrap .about-ed-social li .rr-primary-btn-3 {
+    margin-left: 0;
+  }
+}
 .about-content-wrap .about-ed-social .end-list-1 {
   border-top: 1px solid rgba(15, 15, 15, 0.1);
 }
@@ -9542,6 +9579,12 @@ START: Testimonial CSS
   .about-content-wrap .about-right-content .about-author-info .border-label {
     width: 116%;
     margin-left: -31px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-content-wrap .about-right-content .about-author-info .border-label {
+    width: 105%;
+    margin-left: -48px;
   }
 }
 .about-content-wrap .about-right-content .about-author-info .author-img {
@@ -11986,6 +12029,17 @@ START: Testimonial CSS
 /**----------------------------------------
 START: Project CSS
 ----------------------------------------*/
+@media (max-width: 1600px) {
+  .project-section {
+    padding: 100px 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .project-section {
+    padding: 80px 0;
+  }
+}
+
 .project-item-wrap {
   display: flex;
   align-items: center;
@@ -12004,16 +12058,6 @@ START: Project CSS
 @media (max-width: 1600px) {
   .project-item {
     margin-left: 0;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .project-item {
-    margin-bottom: 50px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .project-item {
-    margin-bottom: 30px;
   }
 }
 .project-item-6 {
@@ -12081,7 +12125,17 @@ START: Project CSS
   line-height: 29px;
   color: #0F0F0F;
 }
+@media (max-width: 1399px) {
+  .project-item .project-content .title {
+    font-size: 22px;
+  }
+}
 @media (max-width: 1199px) {
+  .project-item .project-content .title {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 992px) {
   .project-item .project-content .title {
     font-size: 18px;
   }
@@ -13017,6 +13071,22 @@ START: Project CSS
 }
 
 /* !END: Award CSS */
+@media only screen and (max-width: 992px) {
+  .award-section .award-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .award-section .award-content {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .award-section .award-content .section-title {
+    max-width: 215px;
+  }
+}
 @media (max-width: 1399px) {
   .award-section__area-3 {
     padding-top: 100px;
@@ -13567,6 +13637,11 @@ START: Project CSS
   transform: translateX(-50%);
   opacity: 1;
   z-index: -1;
+}
+@media (max-width: 1600px) {
+  .skill-section .mid-border {
+    left: 54%;
+  }
 }
 @media (max-width: 1399px) {
   .skill-section .mid-border {
@@ -15028,7 +15103,7 @@ START: Sidebar CSS
   overflow-y: auto;
   visibility: hidden;
   transition: all 0.5s ease-in-out;
-  padding: 60px 40px;
+  padding: 40px;
 }
 
 .open-sidebar .sidebar-area {
@@ -15280,32 +15355,6 @@ START: Sidebar CSS
 }
 .side-menu-list li a:hover {
   color: var(--rr-color-theme-primary);
-}
-
-.side-menu-social {
-  margin-top: 40px;
-  list-style: none;
-}
-.side-menu-social li {
-  display: inline-flex;
-}
-.side-menu-social li:not(:last-of-type) {
-  margin-right: 10px;
-}
-.side-menu-social li a {
-  background-color: var(--rr-color-border-1);
-  font-size: 17px;
-  color: var(--rr-color-text-body);
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--rr-color-border-1);
-}
-.side-menu-social li a:hover {
-  background-color: var(--rr-color-theme-primary);
-  color: var(--rr-color-common-white);
 }
 
 /* !END: Sidebar CSS */
@@ -16056,6 +16105,11 @@ START: Footer CSS
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 25px;
+}
+@media only screen and (max-width: 992px) {
+  .footer-top .section-title {
+    font-size: 36px;
+  }
 }
 .footer-top .footer-btn a {
   background-color: var(--rr-color-common-white);

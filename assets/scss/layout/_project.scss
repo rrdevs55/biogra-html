@@ -4,7 +4,14 @@
 START: Project CSS
 ----------------------------------------*/
 // project-section css
-
+.project-section {
+    @include breakpoint(xxl) {
+        padding: 100px 0;
+    }
+    @include breakpoint(md) {
+        padding: 80px 0;
+    }
+}
 .project-item-wrap {
     @include flex-vertical-center;
     column-gap: 50px;
@@ -23,13 +30,13 @@ START: Project CSS
         margin-left: 0;
     }
 
-    @include breakpoint(md) {
-        margin-bottom: 50px;
-    }
+    // @include breakpoint(md) {
+    //     margin-bottom: 50px;
+    // }
 
-    @include breakpoint(sm) {
-        margin-bottom: 30px;
-    }
+    // @include breakpoint(sm) {
+    //     margin-bottom: 30px;
+    // }
 
     &-6 {
         margin-right: 0px;
@@ -112,7 +119,13 @@ START: Project CSS
             line-height: 29px;
             color: #0F0F0F;
 
+            @include breakpoint(xl) {
+                font-size: 22px;
+            }
             @include breakpoint(lg) {
+                font-size: 15px;
+            }
+            @include breakpoint(md) {
                 font-size: 18px;
             }
 
@@ -142,7 +155,6 @@ START: Project CSS
                     margin-right: 23px;
                 }
             }
-
         }
 
         .project-list {

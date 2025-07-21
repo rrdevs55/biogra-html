@@ -106,6 +106,21 @@
 
 // award-section-3 style 
 .award-section {
+    .award-content {
+        @include breakpoint(md) {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include breakpoint(sm) {
+            flex-wrap: wrap;
+        }
+
+        .section-title {
+            @include breakpoint(md) {
+                max-width: 215px;
+            }
+        }
+    }
 
     &__area-3 {
         @include breakpoint(xl) {

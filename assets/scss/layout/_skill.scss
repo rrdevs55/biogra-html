@@ -30,6 +30,9 @@
         opacity: 1;
         z-index: -1;
 
+        @include breakpoint(xxl) {
+            left: 54%;
+        }
         @include breakpoint(xl) {
             display: none;
         }

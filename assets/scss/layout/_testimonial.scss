@@ -6,11 +6,17 @@ START: Testimonial CSS
 .testimonial-section {
     &-1 {
         .section-heading {
+            @include breakpoint(md) {
+                display: block;
+            }
+
             .section-title {
                 margin-left: -47px;
 
-                @include breakpoint(sm) {
+                @include breakpoint(md) {
                     margin-left: 0;
+                    margin-top: 15px;
+                    max-width: 291px;
                 }
             }
         }
@@ -25,7 +31,7 @@ START: Testimonial CSS
     padding-bottom: 75px;
 
     .swiper-pagination {
-        bottom: 0;
+        bottom: -10px;
 
         .swiper-pagination-bullet {
             background-color: var(--rr-color-heading-primary);
@@ -628,6 +634,7 @@ START: Testimonial CSS
         @include breakpoint(lg) {
             padding-bottom: 60px;
         }
+
         @include breakpoint(sm) {
             padding-bottom: 40px;
         }
