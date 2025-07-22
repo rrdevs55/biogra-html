@@ -1137,7 +1137,6 @@ START: Blog CSS
 }
 
 .blog-btn {
-
     align-items: center;
     font-weight: 500;
     font-size: 16px;
@@ -1152,6 +1151,7 @@ START: Blog CSS
     &:hover {
         color: var(--rr-color-heading-primary);
         background-size: 100% 2px;
+        color: #fff;
     }
 
     & i {

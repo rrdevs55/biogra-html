@@ -2754,6 +2754,11 @@ ul {
 .pt-130 {
   padding-top: 130px;
 }
+@media (max-width: 1199px) {
+  .pt-130 {
+    padding-top: 100px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .pt-130 {
     padding-top: 80px;
@@ -2767,6 +2772,11 @@ ul {
 
 .pt-120 {
   padding-top: 120px;
+}
+@media (max-width: 1199px) {
+  .pt-120 {
+    padding-top: 90px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .pt-120 {
@@ -2837,6 +2847,11 @@ ul {
 
 .pb-130 {
   padding-bottom: 130px;
+}
+@media (max-width: 1199px) {
+  .pb-130 {
+    padding-bottom: 100px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .pb-130 {
@@ -5852,6 +5867,7 @@ START: Blog CSS
 .blog-btn:hover {
   color: var(--rr-color-heading-primary);
   background-size: 100% 2px;
+  color: #fff;
 }
 .blog-btn i {
   margin-left: 7px;
@@ -13817,14 +13833,13 @@ START: Project CSS
   font-weight: 400;
   line-height: 1;
 }
-.skill-item-wrap .skill-item-2 .content .rr-primary-btn {
+.skill-item-wrap .skill-item-2 .content .text-span {
   color: var(--rr-color-text-body);
   font-size: 14px;
   font-weight: 500;
-  padding: 9px 16px;
-}
-.skill-item-wrap .skill-item-2 .content .rr-primary-btn:hover {
-  color: #fff;
+  padding: 3.5px 16px;
+  border: 1px solid rgba(28, 28, 40, 0.1);
+  border-radius: 30px;
 }
 
 .skill-section-4-area {

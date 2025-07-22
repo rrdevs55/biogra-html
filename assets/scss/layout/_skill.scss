@@ -33,6 +33,7 @@
         @include breakpoint(xxl) {
             left: 54%;
         }
+
         @include breakpoint(xl) {
             display: none;
         }
@@ -217,15 +218,13 @@
                 }
             }
 
-            .rr-primary-btn {
+            .text-span {
                 color: var(--rr-color-text-body);
                 font-size: 14px;
                 font-weight: 500;
-                padding: 9px 16px;
-
-                &:hover {
-                    color: #fff;
-                }
+                padding: 3.5px 16px;
+                border: 1px solid rgba(28, 28, 40, 0.1);
+                border-radius: 30px;
             }
         }
     }
