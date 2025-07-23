@@ -416,13 +416,13 @@
                     width: 116%;
                     margin-left: -48px;
                 }
-            
+
                 @include breakpoint(xl) {
                     width: 116%;
                     margin-left: -31px;
                 }
 
-                 @include breakpoint(sm) {
+                @include breakpoint(sm) {
                     width: 105%;
                     margin-left: -48px;
                 }
@@ -502,6 +502,11 @@
     margin-top: 100px;
     align-items: center;
 
+    
+        @include breakpoint(sm) {
+            margin-top: 50px;
+        }
+
     .about-counter-items {
         @include flex-vertical-center;
         column-gap: 90px;
@@ -528,6 +533,9 @@
                     font-family: 'Inter Tight';
                 }
 
+                @include breakpoint(lg) {
+                    font-size: 89px;
+                }
                 @include breakpoint(md) {
                     font-size: 45px;
                 }
@@ -565,6 +573,13 @@
 .about-img-2 {
     height: 530px;
     width: 945px;
+
+    @include breakpoint(lg) {
+        width: 475px;
+    }
+    @include breakpoint(md) {
+        width: 100%;
+    }
 
     img {
         width: 100%;

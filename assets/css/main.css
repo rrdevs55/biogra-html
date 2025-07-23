@@ -5040,6 +5040,11 @@ START: Blog CSS
     padding-left: 30px;
   }
 }
+@media only screen and (max-width: 450px) {
+  .post-meta-2 {
+    padding-left: 12px;
+  }
+}
 .post-meta-2 li {
   margin: 15px 0;
 }
@@ -5092,6 +5097,11 @@ START: Blog CSS
     padding-left: 30px;
   }
 }
+@media only screen and (max-width: 450px) {
+  .post-content-2 {
+    padding-left: 12px;
+  }
+}
 .post-content-2 .title {
   margin-top: 25px;
   margin-bottom: 32px;
@@ -5125,6 +5135,11 @@ START: Blog CSS
     margin-left: 30px;
   }
 }
+@media only screen and (max-width: 450px) {
+  .post-content-2-3 {
+    margin-left: 12px;
+  }
+}
 .post-content-2-3 .title {
   font-family: "Inter Tight";
   font-weight: 600;
@@ -5146,6 +5161,12 @@ START: Blog CSS
 .post-content-2-3 .title a:hover {
   color: var(--rr-color-heading-primary);
   background-size: 100% 2px;
+}
+
+@media only screen and (max-width: 767px) {
+  .h2-blog-section .section-heading {
+    margin-bottom: 20px;
+  }
 }
 
 .h2-blog-card {
@@ -5170,7 +5191,6 @@ START: Blog CSS
 .h2-blog-thumb-2 {
   border: none;
   padding: 28px;
-  padding-right: 0px;
 }
 @media only screen and (max-width: 576px) {
   .h2-blog-thumb-2 {
@@ -6914,6 +6934,11 @@ START: Testimonial CSS
   .h2-testimonial-thumb {
     margin-bottom: 30px;
     margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .h2-testimonial-thumb img {
+    width: 100%;
   }
 }
 .h2-testimonial-content {
@@ -9663,6 +9688,11 @@ START: Testimonial CSS
   margin-top: 100px;
   align-items: center;
 }
+@media only screen and (max-width: 767px) {
+  .about-wrap-2 {
+    margin-top: 50px;
+  }
+}
 .about-wrap-2 .about-counter-items {
   display: flex;
   align-items: center;
@@ -9688,6 +9718,11 @@ START: Testimonial CSS
 }
 .about-wrap-2 .about-counter-items .about-counter .title span {
   font-family: "Inter Tight";
+}
+@media (max-width: 1199px) {
+  .about-wrap-2 .about-counter-items .about-counter .title {
+    font-size: 89px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .about-wrap-2 .about-counter-items .about-counter .title {
@@ -9722,6 +9757,16 @@ START: Testimonial CSS
 .about-img-2 {
   height: 530px;
   width: 945px;
+}
+@media (max-width: 1199px) {
+  .about-img-2 {
+    width: 475px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-img-2 {
+    width: 100%;
+  }
 }
 .about-img-2 img {
   width: 100%;
@@ -11502,6 +11547,8 @@ START: Testimonial CSS
   color: #ffffff;
   padding: 0 29px;
   border-radius: 10px;
+  display: inline-block;
+  line-height: 170px;
 }
 @media (max-width: 1199px) {
   .hero-section-3 .title-wrap .dec {
@@ -11544,7 +11591,7 @@ START: Testimonial CSS
   color: #0F0F0F;
   margin-bottom: 0;
   padding-bottom: 22px;
-  margin-top: 82px;
+  margin-top: 63px;
 }
 @media (max-width: 1600px) {
   .hero-section-3 .title-wrap .dec p {
@@ -12248,7 +12295,7 @@ START: Project CSS
 }
 @media only screen and (max-width: 992px) {
   .project-item-1 {
-    margin-right: 0;
+    margin-right: 7.5px;
   }
 }
 .project-item-3 {
@@ -12292,6 +12339,11 @@ START: Project CSS
 @media (max-width: 1399px) {
   .project-section-2 {
     margin: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .project-section-2 .section-heading {
+    margin-bottom: 50px;
   }
 }
 .project-section-2 .project-left {
@@ -14360,6 +14412,11 @@ START: Contact CSS
 .contact-section {
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 }
+@media only screen and (max-width: 992px) {
+  .contact-section .contact-content {
+    margin-top: 30px;
+  }
+}
 
 .contact-img-wrap {
   max-width: 840px;
@@ -14381,6 +14438,11 @@ START: Contact CSS
   }
 }
 @media only screen and (max-width: 992px) {
+  .contact-img-wrap .contact-img-1 {
+    max-width: 378px;
+  }
+}
+@media only screen and (max-width: 768px) {
   .contact-img-wrap .contact-img-1 {
     max-width: 300px;
   }
@@ -14859,18 +14921,6 @@ START: Contact CSS
   .contact__map .map {
     height: 400px;
   }
-}
-
-.h3-contact-wrapper {
-  padding-left: 40px;
-}
-@media (max-width: 1199px) {
-  .h3-contact-wrapper {
-    padding-left: 20px;
-  }
-}
-.h3-contact-wrapper-2 {
-  padding-left: 0px;
 }
 
 .contact-form .form-item .form-control.nice-select-2 {
@@ -16331,6 +16381,8 @@ START: Footer CSS
   .h2-footer-title h2 {
     font-size: 65px;
     line-height: 75px;
+    text-align: left;
+    margin-left: 7px;
   }
 }
 .h2-footer-item {

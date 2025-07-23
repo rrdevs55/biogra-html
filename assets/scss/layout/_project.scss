@@ -8,10 +8,12 @@ START: Project CSS
     @include breakpoint(xxl) {
         padding: 100px 0;
     }
+
     @include breakpoint(md) {
         padding: 80px 0;
     }
 }
+
 .project-item-wrap {
     @include flex-vertical-center;
     column-gap: 50px;
@@ -122,9 +124,11 @@ START: Project CSS
             @include breakpoint(xl) {
                 font-size: 22px;
             }
+
             @include breakpoint(lg) {
                 font-size: 15px;
             }
+
             @include breakpoint(md) {
                 font-size: 18px;
             }
@@ -239,7 +243,7 @@ START: Project CSS
         }
 
         @include breakpoint(md) {
-            margin-right: 0;
+            margin-right: 7.5px;
         }
     }
 
@@ -285,6 +289,12 @@ START: Project CSS
 
     @include breakpoint(xl) {
         margin: 0 15px;
+    }
+
+    .section-heading {
+        @include breakpoint(sm) {
+            margin-bottom: 50px;
+        }
     }
 
     .project-left {

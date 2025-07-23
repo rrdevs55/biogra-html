@@ -215,6 +215,10 @@ START: Blog CSS
             padding-left: 30px;
         }
 
+        @media only screen and (max-width: 450px) {
+            padding-left: 12px;
+        }
+
         & li {
             margin: 15px 0;
         }
@@ -273,6 +277,10 @@ START: Blog CSS
         padding-left: 30px;
     }
 
+    @media only screen and (max-width: 450px) {
+        padding-left: 12px;
+    }
+
     .title {
         margin-top: 25px;
         margin-bottom: 32px;
@@ -304,6 +312,10 @@ START: Blog CSS
             margin-left: 30px;
         }
 
+        @media only screen and (max-width: 450px) {
+            margin-left: 12px;
+        }
+
         .title {
             font-family: 'Inter Tight';
             font-weight: 600;
@@ -328,6 +340,13 @@ START: Blog CSS
 }
 
 // h2-blog css
+.h2-blog-section {
+    .section-heading {
+        @include breakpoint(sm) {
+            margin-bottom: 20px;
+        }
+    }
+}
 
 .h2-blog {
     &-card {
@@ -354,7 +373,6 @@ START: Blog CSS
         &-2 {
             border: none;
             padding: 28px;
-            padding-right: 0px;
 
             @media only screen and (max-width: 576px) {
                 padding: 5px;
@@ -1168,7 +1186,6 @@ START: Blog CSS
 
 // .blog-detail css
 .blog-detail {
-    &-wrapper {}
 
     &-content {
         margin-bottom: 40px;
