@@ -153,6 +153,11 @@
     .section-heading {
         margin-bottom: 0;
 
+        @include breakpoint(lg) {
+            padding-left: 0;
+            margin-top: 40px;
+        }
+
         @include breakpoint(sm) {
             margin-top: 20px;
         }
@@ -356,7 +361,7 @@
 
             @include breakpoint(lg) {
                 &:first-child {
-                    padding: 70px 15px 70px 15px;
+                    padding: 70px 0 70px 0;
                 }
             }
 
@@ -664,6 +669,11 @@
 
         @include breakpoint(lg) {
             margin-top: 70px;
+            width: 100%;
+            max-width: 100%;
+        }
+        @include breakpoint(md) {
+            margin-top: 30px;
             width: 100%;
             max-width: 100%;
         }

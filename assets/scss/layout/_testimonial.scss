@@ -1295,6 +1295,9 @@ START: Testimonial CSS
     @include breakpoint(md) {
         padding: 70px 30px;
     }
+    @include breakpoint(sm) {
+        padding: 85px 30px;
+    }
 }
 
 .qs-slide-active {

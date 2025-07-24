@@ -438,6 +438,10 @@ START: Footer CSS
         flex-wrap: wrap;
         row-gap: 15px;
 
+        @include breakpoint(sm) {
+            row-gap: 30px;
+        }
+
         .timer {
             display: flex;
             align-items: center;
@@ -559,6 +563,12 @@ START: Footer CSS
             position: absolute;
             background: rgba(15, 15, 15, 0.1);
 
+            @include breakpoint(xl) {
+                top: -16px;
+            }
+            @include breakpoint(lg) {
+                top: -24px;
+            }
             @include breakpoint(sm) {
                 display: none;
             }

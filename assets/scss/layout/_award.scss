@@ -447,7 +447,7 @@
             @include breakpoint(xxl) {
                 margin-right: 0;
                 margin-left: 110px;
-
+                padding: 0 0 69px 0;
             }
 
             @include breakpoint(xl) {
@@ -460,6 +460,7 @@
                 width: inherit;
                 margin-right: 20px;
                 margin-left: 20px;
+                padding: 69px 0;
             }
 
             @include breakpoint(md) {

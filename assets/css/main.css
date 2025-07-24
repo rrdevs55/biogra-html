@@ -7610,6 +7610,11 @@ START: Testimonial CSS
     padding: 70px 30px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .qs-slide {
+    padding: 85px 30px;
+  }
+}
 
 .qs-slide-active {
   z-index: 10;
@@ -7929,6 +7934,12 @@ START: Testimonial CSS
 .service-2 .section-heading {
   margin-bottom: 0;
 }
+@media (max-width: 1199px) {
+  .service-2 .section-heading {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .service-2 .section-heading {
     margin-top: 20px;
@@ -8119,7 +8130,7 @@ START: Testimonial CSS
 }
 @media (max-width: 1199px) {
   .service-2__item-2:first-child {
-    padding: 70px 15px 70px 15px;
+    padding: 70px 0 70px 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -8403,6 +8414,13 @@ START: Testimonial CSS
 @media (max-width: 1199px) {
   .h3-service__video {
     margin-top: 70px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .h3-service__video {
+    margin-top: 30px;
     width: 100%;
     max-width: 100%;
   }
@@ -11520,7 +11538,7 @@ START: Testimonial CSS
 }
 @media only screen and (max-width: 576px) {
   .hero-section-3 .title-wrap .title {
-    font-size: 94px;
+    font-size: 88px;
     line-height: 130px;
   }
 }
@@ -11613,9 +11631,9 @@ START: Testimonial CSS
   padding-bottom: 100px;
   border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 }
-@media (max-width: 1600px) {
+@media (max-width: 1199px) {
   .hero-section-5 {
-    padding: 50px 15px;
+    padding: 91px 15px 0 15px;
   }
 }
 .hero-section-5 .hero-5-wrapper {
@@ -11919,7 +11937,7 @@ START: Testimonial CSS
 }
 @media (max-width: 1399px) {
   .hero-section-4-wrapper {
-    padding: 116px 20px 70px 20px;
+    padding: 116px 15px 70px 15px;
   }
 }
 @media (max-width: 1199px) {
@@ -11929,7 +11947,7 @@ START: Testimonial CSS
 }
 @media only screen and (max-width: 992px) {
   .hero-section-4-wrapper {
-    padding: 50px 66px 70px 58px;
+    padding: 50px 15px 70px 15px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -13467,6 +13485,7 @@ START: Project CSS
   .award-section-3__wraper .item2 {
     margin-right: 0;
     margin-left: 110px;
+    padding: 0 0 69px 0;
   }
 }
 @media (max-width: 1399px) {
@@ -13481,6 +13500,7 @@ START: Project CSS
     width: inherit;
     margin-right: 20px;
     margin-left: 20px;
+    padding: 69px 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -14887,7 +14907,6 @@ START: Contact CSS
 @media (max-width: 1199px) {
   .contact__map::before {
     height: 123.5%;
-    top: -111px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -14920,6 +14939,18 @@ START: Contact CSS
 @media (max-width: 1199px) {
   .contact__map .map {
     height: 400px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .h3-contact-wrapper .section-heading .sub-heading {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .h3-content {
+    margin-bottom: 40px;
   }
 }
 
@@ -15126,6 +15157,11 @@ START: Contact CSS
   font-family: var(--rr-ff-heading);
   font-weight: var(--rr-fw-sbold);
   padding-left: 36px;
+}
+@media only screen and (max-width: 767px) {
+  .contact-section-4 .contact-content-one .section-heading-one .section-title-one {
+    padding-left: 0;
+  }
 }
 
 .h3-contact__us .rr-primary-btn:focus {
@@ -16568,6 +16604,11 @@ START: Footer CSS
   flex-wrap: wrap;
   row-gap: 15px;
 }
+@media only screen and (max-width: 767px) {
+  .h3-footer-section .h3-footer-wrapper {
+    row-gap: 30px;
+  }
+}
 .h3-footer-section .h3-footer-wrapper .timer {
   display: flex;
   align-items: center;
@@ -16675,6 +16716,16 @@ START: Footer CSS
   display: block;
   position: absolute;
   background: rgba(15, 15, 15, 0.1);
+}
+@media (max-width: 1399px) {
+  .footer-4-area::before {
+    top: -16px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer-4-area::before {
+    top: -24px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .footer-4-area::before {

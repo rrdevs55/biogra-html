@@ -541,7 +541,6 @@ START: Contact CSS
 
         @include breakpoint(lg) {
             height: 123.5%;
-            top: -111px;
         }
 
         @include breakpoint(md) {
@@ -574,17 +573,32 @@ START: Contact CSS
     }
 }
 
-// .h3-contact-wrapper {
-//     // padding-left: 40px;
+.h3-contact-wrapper {
 
-//     // @include breakpoint(lg) {
-//     //     padding-left: 20px;
-//     // }
+    .section-heading {
+        .sub-heading {
+            @include breakpoint(md) {
+                margin-bottom: 0;
+            }
+        }
+    }
 
-//     // &-2 {
-//     //     padding-left: 0px;
-//     // }
-// }
+    // padding-left: 40px;
+
+    // @include breakpoint(lg) {
+    //     padding-left: 20px;
+    // }
+
+    // &-2 {
+    //     padding-left: 0px;
+    // }
+}
+
+.h3-content {
+    @include breakpoint(lg) {
+        margin-bottom: 40px;
+    }
+}
 
 // h5-contact css
 
@@ -806,6 +820,11 @@ START: Contact CSS
                     font-family: var(--rr-ff-heading);
                     font-weight: var(--rr-fw-sbold);
                     padding-left: 36px;
+
+                    @include breakpoint(sm) {
+                        padding-left: 0;
+                    }
+
                 }
             }
         }

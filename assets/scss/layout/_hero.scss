@@ -502,7 +502,7 @@
             }
 
             @media only screen and (max-width: 576px) {
-                font-size: 94px;
+                font-size: 88px;
                 line-height: 130px;
             }
 
@@ -596,8 +596,11 @@
     padding-bottom: 100px;
     border-bottom: 1px solid rgba(28, 28, 40, 0.1);
 
-    @include breakpoint(xxl) {
-        padding: 50px 15px;
+    // @include breakpoint(xxl) {
+    //     padding: 50px 15px;
+    // }
+    @include breakpoint(lg) {
+        padding: 91px 15px 0 15px;
     }
 
     .hero-5-wrapper {
@@ -918,7 +921,7 @@
         }
 
         @include breakpoint(xl) {
-            padding: 116px 20px 70px 20px;
+            padding: 116px 15px 70px 15px;
         }
 
         @include breakpoint(lg) {
@@ -926,7 +929,7 @@
         }
 
         @include breakpoint(md) {
-            padding: 50px 66px 70px 58px;
+            padding: 50px 15px 70px 15px;
         }
 
         @media only screen and (max-width: 576px) {

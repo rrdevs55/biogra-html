@@ -1320,7 +1320,7 @@
             slidesPerGroup: 1,
             spaceBetween: 0,
             loop: true,
-            // autoplay: true,
+            autoplay: true,
             speed: 800,
         });
 
@@ -1330,7 +1330,7 @@
             slidesPerGroup: 1,
             spaceBetween: 0,
             loop: true,
-            // autoplay: true, 
+            autoplay: true,
             speed: 600,
             pagination: {
                 el: ".swiper-pagination",
