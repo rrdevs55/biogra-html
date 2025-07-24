@@ -209,6 +209,10 @@ START: Contact CSS
             &-3 {
                 margin-left: 0;
                 padding: 7px 0px 17px 15px;
+
+                @include breakpoint(sm) {
+                    padding: 7px 0px 17px 30px;
+                }
             }
 
             &-4 {

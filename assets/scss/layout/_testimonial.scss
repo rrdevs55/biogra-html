@@ -54,7 +54,7 @@ START: Testimonial CSS
 }
 
 .testi-item {
-    background-color: #F3F3F3 !important;
+    background-color: #F3F3F3;
     padding: 50px;
 
     @include breakpoint(xxl) {
@@ -731,9 +731,13 @@ START: Testimonial CSS
 
     .swiper-pagination {
         bottom: 0;
-        left: -75px;
+        left: -65px;
 
         @include breakpoint(lg) {
+            left: -45px;
+        }
+
+        @include breakpoint(sm) {
             left: 0;
         }
 
@@ -1295,6 +1299,7 @@ START: Testimonial CSS
     @include breakpoint(md) {
         padding: 70px 30px;
     }
+
     @include breakpoint(sm) {
         padding: 85px 30px;
     }

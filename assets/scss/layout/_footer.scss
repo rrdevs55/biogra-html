@@ -447,6 +447,11 @@ START: Footer CSS
             align-items: center;
             flex-wrap: wrap;
             gap: 20px;
+            padding-left: 240px;
+
+            @include breakpoint(lg) {
+                padding-left: 0;
+            }
 
             .date {
                 font-family: 'Inter Tight';
@@ -566,9 +571,11 @@ START: Footer CSS
             @include breakpoint(xl) {
                 top: -16px;
             }
+
             @include breakpoint(lg) {
                 top: -24px;
             }
+
             @include breakpoint(sm) {
                 display: none;
             }

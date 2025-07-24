@@ -6515,7 +6515,7 @@ START: Testimonial CSS
 }
 
 .testi-item {
-  background-color: #F3F3F3 !important;
+  background-color: #F3F3F3;
   padding: 50px;
 }
 @media (max-width: 1600px) {
@@ -7135,9 +7135,14 @@ START: Testimonial CSS
 }
 .h5-testimonial .swiper-pagination {
   bottom: 0;
-  left: -75px;
+  left: -65px;
 }
 @media (max-width: 1199px) {
+  .h5-testimonial .swiper-pagination {
+    left: -45px;
+  }
+}
+@media only screen and (max-width: 767px) {
   .h5-testimonial .swiper-pagination {
     left: 0;
   }
@@ -7955,6 +7960,7 @@ START: Testimonial CSS
   padding: 30px 0;
   margin-bottom: -1px;
   transition: all 0.3s ease-in-out;
+  column-gap: 10px;
 }
 .service-2__item:hover .content .thumb {
   max-height: 300px;
@@ -10519,7 +10525,7 @@ START: Testimonial CSS
     margin-top: 60px;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 767px) {
   .h3-about__thumb {
     margin-top: 0;
   }
@@ -10707,6 +10713,11 @@ START: Testimonial CSS
   margin-top: 14px;
   margin-bottom: 45px;
 }
+@media only screen and (max-width: 992px) {
+  .about__wrap .dec {
+    margin-top: 0;
+  }
+}
 
 .features__wrap {
   margin-top: 85px;
@@ -10837,6 +10848,12 @@ START: Testimonial CSS
   padding: 58px 0;
   border: 1px solid rgba(15, 15, 15, 0.1);
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 992px) {
+  .brand__thumb {
+    width: 205px;
+    padding: 35px 0;
+  }
 }
 .brand__thumb:nth-child(4) {
   margin-left: 110px;
@@ -11040,6 +11057,15 @@ START: Testimonial CSS
 }
 .about-section-4-content .about-btn a:hover {
   border: 1px solid #9175FF;
+}
+
+.h5-about .section-heading {
+  justify-content: space-between;
+}
+@media only screen and (max-width: 992px) {
+  .h5-about .section-heading .section-title br {
+    display: none;
+  }
 }
 
 /**----------------------------------------
@@ -12163,7 +12189,7 @@ START: Project CSS
 }
 .project-item .project-thumb-2 img {
   width: 100%;
-  height: 850px;
+  height: 950px;
   object-fit: cover;
   object-position: top;
 }
@@ -12693,6 +12719,11 @@ START: Project CSS
 }
 .project-service__thumb {
   margin: 80px 0;
+}
+@media only screen and (max-width: 992px) {
+  .project-service__thumb {
+    margin: 40px 0;
+  }
 }
 .project-service__wrap {
   margin-top: 93px;
@@ -14622,6 +14653,11 @@ START: Contact CSS
 .contact-form .form-item .form-control-3 {
   margin-left: 0;
   padding: 7px 0px 17px 15px;
+}
+@media only screen and (max-width: 767px) {
+  .contact-form .form-item .form-control-3 {
+    padding: 7px 0px 17px 30px;
+  }
 }
 .contact-form .form-item .form-control-4 {
   font-weight: var(--rr-fw-regular);
@@ -16614,6 +16650,12 @@ START: Footer CSS
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  padding-left: 240px;
+}
+@media (max-width: 1199px) {
+  .h3-footer-section .h3-footer-wrapper .timer {
+    padding-left: 0;
+  }
 }
 .h3-footer-section .h3-footer-wrapper .timer .date {
   font-family: "Inter Tight";
@@ -17570,14 +17612,19 @@ START: Breadcrumb SCSS
 }
 @media only screen and (max-width: 992px) {
   .fact__wrapper {
-    gap: 50px;
+    gap: 25px;
   }
 }
 @media only screen and (max-width: 767px) {
   .fact__wrapper {
-    gap: 0px;
+    gap: 50px;
     margin-bottom: 30px;
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .fact__wrapper {
+    gap: 70px;
   }
 }
 .fact__item p {
@@ -17587,6 +17634,11 @@ START: Breadcrumb SCSS
   color: #696969;
   margin-bottom: 0px;
 }
+@media only screen and (max-width: 767px) {
+  .fact__item p {
+    font-size: 18px;
+  }
+}
 .fact__item h2 {
   font-weight: 600;
   font-size: 100px;
@@ -17594,7 +17646,7 @@ START: Breadcrumb SCSS
   letter-spacing: -0.03em;
   color: #1C1C28;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .fact__item h2 {
     font-size: 70px;
     line-height: 100px;
