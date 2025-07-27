@@ -5199,6 +5199,20 @@ START: Blog CSS
   }
 }
 
+.h3-blog-section .section-heading-5 {
+  margin-bottom: 0;
+}
+@media (max-width: 1199px) {
+  .h3-blog-section .section-heading-5 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .h3-blog-section .h5-blog-info {
+    display: block;
+  }
+}
+
 .h3-blog-wrapper .title {
   font-family: "Inter Tight";
   font-weight: 600;
@@ -7139,7 +7153,7 @@ START: Testimonial CSS
 }
 @media (max-width: 1199px) {
   .h5-testimonial .swiper-pagination {
-    left: -45px;
+    left: -90px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -7812,6 +7826,11 @@ START: Testimonial CSS
 .service-section {
   border-top: 1px solid var(--rr-color-border-1);
 }
+@media only screen and (max-width: 767px) {
+  .service-section .section-heading {
+    column-gap: 80px;
+  }
+}
 .service-section .item-wrapper {
   display: flex;
 }
@@ -7847,6 +7866,7 @@ START: Testimonial CSS
   line-height: 30px;
   margin-top: 30px;
   margin-bottom: 150px;
+  display: inline-block;
 }
 @media (max-width: 1399px) {
   .service-section .item-wrapper .item .content .title {
@@ -9284,6 +9304,11 @@ START: Testimonial CSS
 @media (max-width: 1399px) {
   .about-content-wrap > div:nth-child(1) {
     padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about-content-wrap > div:nth-child(1) {
+    padding-right: 0;
   }
 }
 .about-content-wrap > div:nth-child(2) {
@@ -12167,6 +12192,16 @@ START: Project CSS
     margin-left: 0;
   }
 }
+@media only screen and (max-width: 992px) {
+  .project-item {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .project-item {
+    margin-bottom: 30px;
+  }
+}
 .project-item-6 {
   margin-right: 0px;
   margin-left: 0px;
@@ -12367,6 +12402,11 @@ START: Project CSS
     margin-right: 0;
   }
 }
+@media (max-width: 1199px) {
+  .project-item-4 {
+    margin-bottom: 40px;
+  }
+}
 
 .project-item.project-item-2.big.item-2 {
   margin-left: -46px;
@@ -12379,6 +12419,9 @@ START: Project CSS
 
 .project-section-2 {
   overflow: hidden;
+}
+.project-section-2 .section-heading {
+  padding-left: 0;
 }
 @media (max-width: 1399px) {
   .project-section-2 {
@@ -13026,7 +13069,6 @@ START: Project CSS
 @media only screen and (max-width: 767px) {
   .counter-item-wrap {
     flex-direction: column;
-    align-items: baseline;
   }
 }
 
@@ -13204,7 +13246,7 @@ START: Project CSS
     max-width: 215px;
   }
 }
-@media (max-width: 1399px) {
+@media (max-width: 1600px) {
   .award-section__area-3 {
     padding-top: 100px;
   }

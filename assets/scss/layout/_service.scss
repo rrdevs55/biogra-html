@@ -8,6 +8,12 @@
 .service-section {
     border-top: 1px solid var(--rr-color-border-1);
 
+    .section-heading {
+        @include breakpoint(sm) {
+            column-gap: 80px;
+        }
+    }
+
     .item-wrapper {
         display: flex;
 
@@ -45,8 +51,7 @@
                     line-height: 30px;
                     margin-top: 30px;
                     margin-bottom: 150px;
-
-
+                    display: inline-block;
 
                     @include breakpoint(xl) {
                         font-size: 16px;
@@ -673,6 +678,7 @@
             width: 100%;
             max-width: 100%;
         }
+
         @include breakpoint(md) {
             margin-top: 30px;
             width: 100%;

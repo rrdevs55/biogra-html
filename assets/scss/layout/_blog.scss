@@ -383,6 +383,21 @@ START: Blog CSS
 }
 
 // h3-blog css
+.h3-blog-section {
+    .section-heading-5 {
+        margin-bottom: 0;
+
+        @include breakpoint(lg) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .h5-blog-info {
+        @include breakpoint(lg) {
+            display: block;
+        }
+    }
+}
 
 .h3-blog {
     &-wrapper {

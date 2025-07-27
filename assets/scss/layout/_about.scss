@@ -54,6 +54,9 @@
             @include breakpoint(xl) {
                 padding-right: 15px;
             }
+            @include breakpoint(md) {
+                padding-right: 0;
+            }
         }
 
         &:nth-child(2) {
